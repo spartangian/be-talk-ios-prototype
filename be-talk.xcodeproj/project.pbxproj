@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0534F5481D93CEA300C69052 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534F5471D93CEA300C69052 /* UserModel.swift */; };
 		053D9E0D1D8A831700C2732C /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053D9E0C1D8A831700C2732C /* RestApiManager.swift */; };
 		053EC5C51D88C7EA00360F80 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053EC5C41D88C7EA00360F80 /* LoginController.swift */; };
 		054360D81D82846B00B601EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360D71D82846B00B601EC /* AppDelegate.swift */; };
-		054360DA1D82846B00B601EC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360D91D82846B00B601EC /* FirstViewController.swift */; };
+		054360DA1D82846B00B601EC /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360D91D82846B00B601EC /* ProfileController.swift */; };
 		054360DC1D82846B00B601EC /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360DB1D82846B00B601EC /* MessageController.swift */; };
 		054360DF1D82846B00B601EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054360DD1D82846B00B601EC /* Main.storyboard */; };
 		054360E11D82846B00B601EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054360E01D82846B00B601EC /* Assets.xcassets */; };
 		054360E41D82846B00B601EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054360E21D82846B00B601EC /* LaunchScreen.storyboard */; };
 		054360EF1D82846B00B601EC /* be_talkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360EE1D82846B00B601EC /* be_talkTests.swift */; };
 		054360FA1D82846B00B601EC /* be_talkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360F91D82846B00B601EC /* be_talkUITests.swift */; };
+		0575F9651D94D138009D059C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575F9641D94D138009D059C /* UIImageView.swift */; };
+		0575F9691D9512E0009D059C /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575F9681D9512E0009D059C /* ContactController.swift */; };
+		05CE0B6B1D90D7B900844F94 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE0B6A1D90D7B900844F94 /* Request.swift */; };
 		BEB9F79592FC30CEF54F2496 /* Pods_be_talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918378A727D6A4F0740585CC /* Pods_be_talk.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,11 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0534F5471D93CEA300C69052 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		053D9E0C1D8A831700C2732C /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		053EC5C41D88C7EA00360F80 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		054360D41D82846B00B601EC /* be-talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "be-talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		054360D71D82846B00B601EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		054360D91D82846B00B601EC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		054360D91D82846B00B601EC /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		054360DB1D82846B00B601EC /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		054360DE1D82846B00B601EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		054360E01D82846B00B601EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +60,9 @@
 		054360F91D82846B00B601EC /* be_talkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = be_talkUITests.swift; sourceTree = "<group>"; };
 		054360FB1D82846B00B601EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054361071D828CD600B601EC /* be-talk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "be-talk.entitlements"; sourceTree = "<group>"; };
+		0575F9641D94D138009D059C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		0575F9681D9512E0009D059C /* ContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		05CE0B6A1D90D7B900844F94 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		3C70207114327AF37204E715 /* Pods-be-talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be-talk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-be-talk/Pods-be-talk.debug.xcconfig"; sourceTree = "<group>"; };
 		61DDEE3DCC6E6374CCC57A56 /* Pods-be-talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be-talk.release.xcconfig"; path = "Pods/Target Support Files/Pods-be-talk/Pods-be-talk.release.xcconfig"; sourceTree = "<group>"; };
 		918378A727D6A4F0740585CC /* Pods_be_talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_be_talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,9 +121,13 @@
 			children = (
 				054361071D828CD600B601EC /* be-talk.entitlements */,
 				054360D71D82846B00B601EC /* AppDelegate.swift */,
-				054360D91D82846B00B601EC /* FirstViewController.swift */,
+				0575F9641D94D138009D059C /* UIImageView.swift */,
+				054360D91D82846B00B601EC /* ProfileController.swift */,
 				054360DB1D82846B00B601EC /* MessageController.swift */,
 				053EC5C41D88C7EA00360F80 /* LoginController.swift */,
+				05CE0B6A1D90D7B900844F94 /* Request.swift */,
+				0575F9681D9512E0009D059C /* ContactController.swift */,
+				0534F5471D93CEA300C69052 /* UserModel.swift */,
 				054360DD1D82846B00B601EC /* Main.storyboard */,
 				053D9E0C1D8A831700C2732C /* RestApiManager.swift */,
 				054360E01D82846B00B601EC /* Assets.xcassets */,
@@ -348,11 +360,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0575F9651D94D138009D059C /* UIImageView.swift in Sources */,
 				054360DC1D82846B00B601EC /* MessageController.swift in Sources */,
+				0534F5481D93CEA300C69052 /* UserModel.swift in Sources */,
+				05CE0B6B1D90D7B900844F94 /* Request.swift in Sources */,
 				053EC5C51D88C7EA00360F80 /* LoginController.swift in Sources */,
 				054360D81D82846B00B601EC /* AppDelegate.swift in Sources */,
 				053D9E0D1D8A831700C2732C /* RestApiManager.swift in Sources */,
-				054360DA1D82846B00B601EC /* FirstViewController.swift in Sources */,
+				054360DA1D82846B00B601EC /* ProfileController.swift in Sources */,
+				0575F9691D9512E0009D059C /* ContactController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,27 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "be-talk/RestApiManager.swift"
-            timestampString = "495683817.300089"
+            filePath = "be-talk/ProfileController.swift"
+            timestampString = "496304298.768525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "be-talk/RestApiManager.swift"
-            timestampString = "495685547.639212"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "makeHttpPostRequest(_:body:onCompletion:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "logout(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
