@@ -31,7 +31,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        print(indexPath.row)
     }
     
     override func viewDidLoad() {
@@ -39,6 +39,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
         // Do any additional setup after loading the view, typically from a nib.
         
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+
         
         self.titleProfile.title = UserModel.Static.name
         imageProfile.imageFromUrl(UserModel.Static.imageLarge)

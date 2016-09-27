@@ -23,10 +23,10 @@ class RestApiManager: NSObject {
         })
     }
     
-    func httpGetRequest(data: String?, path: String, onCompletion: (JSON) -> Void) {
+    func httpGetRequest(data: String, path: String, onCompletion: (JSON) -> Void) {
         var route: String!
         
-        route = baseURL + path + data!
+        route = baseURL + path + data
         
         makeHTTPGetRequest(route, onCompletion: { json, err in
             onCompletion(json as JSON)
