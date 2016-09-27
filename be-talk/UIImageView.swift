@@ -9,16 +9,16 @@
 import UIKit
 
 extension UIImageView{
-    public func imageFromUrl(urlString: String){
-        if let url = NSURL(string: urlString){
-            let request = NSURLRequest(URL: url)
-            NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()){
-                (response: NSURLResponse?, data:NSData?, error:NSError?) -> Void in
+    public func imageFromUrl(_ urlString: String){
+        if let url = URL(string: urlString){
+            let request = URLRequest(url: url)
+            NSURLConnection.sendAsynchronousRequest(request, queue: OperationQueue.main){
+                (response: URLResponse?, data:Data?, error:NSError?) -> Void in
                 
-                if let imageData = data as NSData?{
+                if let imageData = data as Data?{
                     self.image = UIImage(data: imageData)
                 }
-            }//closure
+            } as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void//closure
         }
     }
 }

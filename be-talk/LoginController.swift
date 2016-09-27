@@ -24,7 +24,7 @@ class LoginController : UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func login(sender: UIButton) {
+    @IBAction func login(_ sender: UIButton) {
         
         var user: String! = ""
         var pass: String! = ""
@@ -36,9 +36,9 @@ class LoginController : UIViewController {
         let postString = "username=\(user)&password=\(pass)&apiToken=12345"
         let path = "login"
         
-        self.buttonLogin.enabled = false
-        self.buttonLogin.userInteractionEnabled = false
-        self.textStatus.textColor = UIColor.blackColor()
+        self.buttonLogin.isEnabled = false
+        self.buttonLogin.isUserInteractionEnabled = false
+        self.textStatus.textColor = UIColor.black
         self.textStatus.text = "Logging in..."
         
         
@@ -56,12 +56,12 @@ class LoginController : UIViewController {
                 UserModel.Static.email = js!["user"]["email"].stringValue
                 
                 //call the main view if successfully logged in
-                NSOperationQueue.mainQueue().addOperationWithBlock {
-                    self.performSegueWithIdentifier("loginSegue", sender: nil)
+                OperationQueue.main.addOperation {
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
                 }
             }else{
                 //output errors in label
-                NSOperationQueue.mainQueue().addOperationWithBlock {
+                OperationQueue.main.addOperation {
                     self.textStatus.textColor = UIColor.init(hue: 357.0, saturation: 77.0, brightness: 100.0, alpha: 1.0)
                     self.textStatus.text = err
                 }
@@ -69,8 +69,8 @@ class LoginController : UIViewController {
             
         })
         
-        self.buttonLogin.enabled = true
-        self.buttonLogin.userInteractionEnabled = true
+        self.buttonLogin.isEnabled = true
+        self.buttonLogin.isUserInteractionEnabled = true
 
     }
     

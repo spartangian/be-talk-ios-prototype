@@ -18,27 +18,27 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     var items: [String] = [UserModel.Static.username, UserModel.Static.email]
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
         
-        cell.textLabel?.text = self.items[indexPath.row]
+        cell.textLabel?.text = self.items[(indexPath as NSIndexPath).row]
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print(indexPath.row)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print((indexPath as NSIndexPath).row)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
         
         self.titleProfile.title = UserModel.Static.name
@@ -52,7 +52,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func logout(sender: UIButton) {
+    @IBAction func logout(_ sender: UIButton) {
         
         var token: String = ""
         
@@ -62,7 +62,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
             print(json)
         })
         
-        performSegueWithIdentifier("logoutSegue", sender: nil)
+        performSegue(withIdentifier: "logoutSegue", sender: nil)
         
     }
 
