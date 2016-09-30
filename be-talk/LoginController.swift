@@ -26,12 +26,14 @@ class LoginController : UIViewController {
     
     @IBAction func login(_ sender: UIButton) {
         
-        var user: String! = ""
-        var pass: String! = ""
+        var user: String = ""
+        var pass: String = ""
         
-        user = textUsername.text
-        pass = textPassword.text
+        user = textUsername.text!
+        pass = textPassword.text!
         
+        print(user)
+        print(pass)
         
         let postString = "username=\(user)&password=\(pass)&apiToken=12345"
         let path = "login"
@@ -40,7 +42,6 @@ class LoginController : UIViewController {
         self.buttonLogin.isUserInteractionEnabled = false
         self.textStatus.textColor = UIColor.black
         self.textStatus.text = "Logging in..."
-        
         
         RestApiManager.sharedInstance.httpPostRequest(postString, path: path, httpResponse: {(js, err) in
           

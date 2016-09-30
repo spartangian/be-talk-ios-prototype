@@ -16,14 +16,14 @@ class RestApiManager: NSObject {
     
     let baseURL = "https://be-talk-dev.tmjp.jp/api/"
     
-    func postRequest(_ path: String, data: [String: AnyObject], onCompletion: (JSON) -> Void){
+    func postRequest(_ path: String, data: [String: AnyObject], onCompletion: @escaping (JSON) -> Void){
         let route = baseURL
         makeHttpPostRequest(route, body: data, onCompletion: {json, err in
             onCompletion(json as JSON)
         })
     }
     
-    func httpGetRequest(_ data: String, path: String, onCompletion: (JSON) -> Void) {
+    func httpGetRequest(_ data: String, path: String, onCompletion: @escaping (JSON) -> Void) {
         var route: String!
         
         route = baseURL + path + data
@@ -34,9 +34,9 @@ class RestApiManager: NSObject {
     }
     
     //complicated version for sending POST request
-    func makeHttpPostRequest(_ path: String, body: [String: AnyObject], onCompletion: ServiceResponse){
+    func makeHttpPostRequest(_ path: String, body: [String: AnyObject], onCompletion: @escaping ServiceResponse){
         
-        let request = NSMutableURLRequest(url: URL(string: path)!)
+        var request = URLRequest(url: URL(string: path)!)
         
         //set the method to post
         request.httpMethod = "POST"
@@ -52,7 +52,7 @@ class RestApiManager: NSObject {
                     let json:JSON = JSON(data: jsonData)
                     return onCompletion(json, nil)
                 }else{
-                    onCompletion(nil, error)
+                    onCompletion(nil, error as NSError?)
                 }
             })
             task.resume()
@@ -64,9 +64,9 @@ class RestApiManager: NSObject {
     
     
     //simple function for sending POST request
-    func httpPostRequest(_ data: String?, path: String, httpResponse: (JSON?, String?) -> Void){
+    func httpPostRequest(_ data: String?, path: String, httpResponse: @escaping (JSON?, String?) -> Void){
 
-        let request = NSMutableURLRequest(url: URL(string: baseURL + path)!)
+        var request = URLRequest(url: URL(string: baseURL + path)!)
         let method: String = "POST"
         
         //var js: JSON?
@@ -116,8 +116,8 @@ class RestApiManager: NSObject {
     }
     
     // MARK: Perform a GET Request
-    fileprivate func makeHTTPGetRequest(_ path: String, onCompletion: ServiceResponse) {
-        let request = NSMutableURLRequest(url: URL(string: path)!)
+    fileprivate func makeHTTPGetRequest(_ path: String, onCompletion: @escaping ServiceResponse) {
+        let request = URLRequest(url: URL(string: path)!)
         
         let session = URLSession.shared
         
@@ -125,9 +125,9 @@ class RestApiManager: NSObject {
             print(response)
             if let jsonData = data {
                 let json:JSON = JSON(data: jsonData)
-                onCompletion(json, error)
+                onCompletion(json, error as NSError?)
             } else {
-                onCompletion(nil, error)
+                onCompletion(nil, error as NSError?)
             }
         })
         task.resume()

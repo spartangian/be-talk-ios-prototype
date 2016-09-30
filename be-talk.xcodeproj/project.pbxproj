@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053359071D9E07190015158B /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053359061D9E07190015158B /* ContactTableViewController.swift */; };
 		0534F5481D93CEA300C69052 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534F5471D93CEA300C69052 /* UserModel.swift */; };
 		053D9E0D1D8A831700C2732C /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053D9E0C1D8A831700C2732C /* RestApiManager.swift */; };
 		053EC5C51D88C7EA00360F80 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053EC5C41D88C7EA00360F80 /* LoginController.swift */; };
@@ -16,12 +17,12 @@
 		054360DF1D82846B00B601EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054360DD1D82846B00B601EC /* Main.storyboard */; };
 		054360E11D82846B00B601EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054360E01D82846B00B601EC /* Assets.xcassets */; };
 		054360E41D82846B00B601EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054360E21D82846B00B601EC /* LaunchScreen.storyboard */; };
-		054360EF1D82846B00B601EC /* be_talkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360EE1D82846B00B601EC /* be_talkTests.swift */; };
 		054360FA1D82846B00B601EC /* be_talkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360F91D82846B00B601EC /* be_talkUITests.swift */; };
 		0575F9651D94D138009D059C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575F9641D94D138009D059C /* UIImageView.swift */; };
 		0575F9691D9512E0009D059C /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575F9681D9512E0009D059C /* ContactController.swift */; };
 		05CE0B6B1D90D7B900844F94 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE0B6A1D90D7B900844F94 /* Request.swift */; };
-		BEB9F79592FC30CEF54F2496 /* Pods_be_talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918378A727D6A4F0740585CC /* Pods_be_talk.framework */; };
+		05F1243D1D9CDCA5000620B0 /* ContactItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F1243C1D9CDCA5000620B0 /* ContactItem.swift */; };
+		BEB9F79592FC30CEF54F2496 /* Pods_be_talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918378A727D6A4F0740585CC /* Pods_be_talk.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053359061D9E07190015158B /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		0534F5471D93CEA300C69052 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		053D9E0C1D8A831700C2732C /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		053EC5C41D88C7EA00360F80 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -54,8 +56,6 @@
 		054360E31D82846B00B601EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		054360E51D82846B00B601EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054360EA1D82846B00B601EC /* be-talkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "be-talkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		054360EE1D82846B00B601EC /* be_talkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = be_talkTests.swift; sourceTree = "<group>"; };
-		054360F01D82846B00B601EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054360F51D82846B00B601EC /* be-talkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "be-talkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		054360F91D82846B00B601EC /* be_talkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = be_talkUITests.swift; sourceTree = "<group>"; };
 		054360FB1D82846B00B601EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +63,7 @@
 		0575F9641D94D138009D059C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		0575F9681D9512E0009D059C /* ContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		05CE0B6A1D90D7B900844F94 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		05F1243C1D9CDCA5000620B0 /* ContactItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactItem.swift; sourceTree = "<group>"; };
 		3C70207114327AF37204E715 /* Pods-be-talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be-talk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-be-talk/Pods-be-talk.debug.xcconfig"; sourceTree = "<group>"; };
 		61DDEE3DCC6E6374CCC57A56 /* Pods-be-talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be-talk.release.xcconfig"; path = "Pods/Target Support Files/Pods-be-talk/Pods-be-talk.release.xcconfig"; sourceTree = "<group>"; };
 		918378A727D6A4F0740585CC /* Pods_be_talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_be_talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				054360D61D82846B00B601EC /* be-talk */,
-				054360ED1D82846B00B601EC /* be-talkTests */,
 				054360F81D82846B00B601EC /* be-talkUITests */,
 				054360D51D82846B00B601EC /* Products */,
 				1960EC9C3E94AFBA2420D53C /* Pods */,
@@ -122,6 +122,7 @@
 				054361071D828CD600B601EC /* be-talk.entitlements */,
 				054360D71D82846B00B601EC /* AppDelegate.swift */,
 				0575F9641D94D138009D059C /* UIImageView.swift */,
+				05F1243C1D9CDCA5000620B0 /* ContactItem.swift */,
 				054360D91D82846B00B601EC /* ProfileController.swift */,
 				054360DB1D82846B00B601EC /* MessageController.swift */,
 				053EC5C41D88C7EA00360F80 /* LoginController.swift */,
@@ -130,20 +131,12 @@
 				0534F5471D93CEA300C69052 /* UserModel.swift */,
 				054360DD1D82846B00B601EC /* Main.storyboard */,
 				053D9E0C1D8A831700C2732C /* RestApiManager.swift */,
+				053359061D9E07190015158B /* ContactTableViewController.swift */,
 				054360E01D82846B00B601EC /* Assets.xcassets */,
 				054360E21D82846B00B601EC /* LaunchScreen.storyboard */,
 				054360E51D82846B00B601EC /* Info.plist */,
 			);
 			path = "be-talk";
-			sourceTree = "<group>";
-		};
-		054360ED1D82846B00B601EC /* be-talkTests */ = {
-			isa = PBXGroup;
-			children = (
-				054360EE1D82846B00B601EC /* be_talkTests.swift */,
-				054360F01D82846B00B601EC /* Info.plist */,
-			);
-			path = "be-talkTests";
 			sourceTree = "<group>";
 		};
 		054360F81D82846B00B601EC /* be-talkUITests */ = {
@@ -338,7 +331,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EE89E4A79106E9F92F935F4A /* [CP] Copy Pods Resources */ = {
@@ -368,8 +361,10 @@
 				0534F5481D93CEA300C69052 /* UserModel.swift in Sources */,
 				05CE0B6B1D90D7B900844F94 /* Request.swift in Sources */,
 				053EC5C51D88C7EA00360F80 /* LoginController.swift in Sources */,
+				05F1243D1D9CDCA5000620B0 /* ContactItem.swift in Sources */,
 				054360D81D82846B00B601EC /* AppDelegate.swift in Sources */,
 				053D9E0D1D8A831700C2732C /* RestApiManager.swift in Sources */,
+				053359071D9E07190015158B /* ContactTableViewController.swift in Sources */,
 				054360DA1D82846B00B601EC /* ProfileController.swift in Sources */,
 				0575F9691D9512E0009D059C /* ContactController.swift in Sources */,
 			);
@@ -379,7 +374,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				054360EF1D82846B00B601EC /* be_talkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,10 +459,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -506,9 +501,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -527,6 +523,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.be-talk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Pods/SwiftyJSON/**";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -544,6 +541,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.be-talk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Pods/SwiftyJSON/**";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -12,13 +12,11 @@ extension UIImageView{
     public func imageFromUrl(_ urlString: String){
         if let url = URL(string: urlString){
             let request = URLRequest(url: url)
-            NSURLConnection.sendAsynchronousRequest(request, queue: OperationQueue.main){
-                (response: URLResponse?, data:Data?, error:NSError?) -> Void in
-                
+            NSURLConnection.sendAsynchronousRequest(request, queue: OperationQueue.main, completionHandler: { response, data, error -> Void in
                 if let imageData = data as Data?{
                     self.image = UIImage(data: imageData)
                 }
-            } as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void as! (URLResponse?, Data?, Error?) -> Void//closure
+            })//closure
         }
     }
 }
