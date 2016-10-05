@@ -20,8 +20,8 @@ class ContactController: UIViewController, UITableViewDelegate, UITableViewDataS
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.contactsArray += [ContactItem(name: "Taku", photo:"test", status: "test")]
-        self.contactsArray += [ContactItem(name: "Masa", photo:"test", status: "test")]
+        //self.contactsArray += [ContactItem(name: "Taku", photo:"test", status: "test")]
+        //self.contactsArray += [ContactItem(name: "Masa", photo:"test", status: "test")]
         
         self.tableView.reloadData()
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -38,7 +38,7 @@ class ContactController: UIViewController, UITableViewDelegate, UITableViewDataS
             for (_, value):(String, JSON) in response{
 
                 let test = value.dictionary
-                self.contactsArray += [ContactItem(name: (test?["name"]?.stringValue)!,photo: (test?["image"]?.stringValue)!,status: (test?["status_message"]?.stringValue)!)]
+                //self.contactsArray += [ContactItem(name: (test?["name"]?.stringValue)!,photo: (test?["image"]?.stringValue)!,status: (test?["status_message"]?.stringValue)!)]
                 
                 self.tableView.reloadData()
             }
@@ -78,21 +78,21 @@ class ContactController: UIViewController, UITableViewDelegate, UITableViewDataS
         return 1
     }
     
-    func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as UITableViewCell?
-        
-        var contact: ContactItem
-        
-        if(tableView == self.searchDisplayController?.searchResultsTableView){
-            contact = self.filteredContacts[indexPath.row]
-        }else{
-            contact = self.contactsArray[indexPath.row]
-        }
-        
-        cell?.textLabel?.text = contact.name
-        
-        return (cell != nil)
-    }
+//    func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+//        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as UITableViewCell?
+//        
+//        var contact: ContactItem
+//        
+//        if(tableView == self.searchDisplayController?.searchResultsTableView){
+//            contact = self.filteredContacts[indexPath.row]
+//        }else{
+//            contact = self.contactsArray[indexPath.row]
+//        }
+//        
+//        cell?.textLabel?.text = contact.name
+//        
+//        return (cell != nil)
+//    }
     
 //    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
 //        tableView.deselectRow(at: <#T##IndexPath#>, animated: true)

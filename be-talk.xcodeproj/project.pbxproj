@@ -18,6 +18,7 @@
 		054360E11D82846B00B601EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054360E01D82846B00B601EC /* Assets.xcassets */; };
 		054360E41D82846B00B601EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054360E21D82846B00B601EC /* LaunchScreen.storyboard */; };
 		054360FA1D82846B00B601EC /* be_talkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360F91D82846B00B601EC /* be_talkUITests.swift */; };
+		056F5A851DA2259C00A0A58E /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056F5A841DA2259C00A0A58E /* ContactDetailViewController.swift */; };
 		0575F9651D94D138009D059C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575F9641D94D138009D059C /* UIImageView.swift */; };
 		0575F9691D9512E0009D059C /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575F9681D9512E0009D059C /* ContactController.swift */; };
 		05CE0B6B1D90D7B900844F94 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE0B6A1D90D7B900844F94 /* Request.swift */; };
@@ -60,6 +61,7 @@
 		054360F91D82846B00B601EC /* be_talkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = be_talkUITests.swift; sourceTree = "<group>"; };
 		054360FB1D82846B00B601EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054361071D828CD600B601EC /* be-talk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "be-talk.entitlements"; sourceTree = "<group>"; };
+		056F5A841DA2259C00A0A58E /* ContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		0575F9641D94D138009D059C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		0575F9681D9512E0009D059C /* ContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		05CE0B6A1D90D7B900844F94 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				05F1243C1D9CDCA5000620B0 /* ContactItem.swift */,
 				054360D91D82846B00B601EC /* ProfileController.swift */,
 				054360DB1D82846B00B601EC /* MessageController.swift */,
+				056F5A841DA2259C00A0A58E /* ContactDetailViewController.swift */,
 				053EC5C41D88C7EA00360F80 /* LoginController.swift */,
 				05CE0B6A1D90D7B900844F94 /* Request.swift */,
 				0575F9681D9512E0009D059C /* ContactController.swift */,
@@ -366,6 +369,7 @@
 				053D9E0D1D8A831700C2732C /* RestApiManager.swift in Sources */,
 				053359071D9E07190015158B /* ContactTableViewController.swift in Sources */,
 				054360DA1D82846B00B601EC /* ProfileController.swift in Sources */,
+				056F5A851DA2259C00A0A58E /* ContactDetailViewController.swift in Sources */,
 				0575F9691D9512E0009D059C /* ContactController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

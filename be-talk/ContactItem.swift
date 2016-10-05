@@ -12,5 +12,8 @@ struct ContactItem{
     
     let name: String
     let photo: String
-    let status: String
+    let statusMessage: String
+    let email: String
+    let employeeId: String
+    let status: Int
 }

@@ -9,12 +9,12 @@
 import UIKit
 import SwiftyJSON
 
-class ContactTableViewController: UITableViewController, UISearchResultsUpdating {
+class ContactTableViewController: UITableViewController {
 
     var contactsArray = [ContactItem]()
-    var contactsNameArray = [String]()
-    var filteredAppleProducts = [String]()
-    var resultSearchController = UISearchController()
+    //var contactsNameArray = [String]()
+    var filteredContacts = [ContactItem]()
+    var resultSearchController = UISearchController(searchResultsController: nil)
     
     @IBOutlet weak var textStatus: UILabel!
     @IBOutlet weak var textName: UILabel!
@@ -24,12 +24,11 @@ class ContactTableViewController: UITableViewController, UISearchResultsUpdating
         super.viewDidLoad()
         
         //add search bar to the top of table view
-        self.resultSearchController = UISearchController(searchResultsController: nil)
-        self.resultSearchController.searchResultsUpdater = self
-        
-        self.resultSearchController.dimsBackgroundDuringPresentation = false
+        resultSearchController.searchResultsUpdater = self
+        resultSearchController.dimsBackgroundDuringPresentation = false
         self.resultSearchController.searchBar.sizeToFit()
-        self.tableView.tableHeaderView = self.resultSearchController.searchBar
+        definesPresentationContext = true
+        tableView.tableHeaderView = resultSearchController.searchBar
         
         var data: String
         var token: String
@@ -42,15 +41,15 @@ class ContactTableViewController: UITableViewController, UISearchResultsUpdating
         RestApiManager.sharedInstance.httpGetRequest(data, path: "contacts", onCompletion: {(response) in
             for (_, value):(String, JSON) in response{
                 
-                let test = value.dictionary
-                self.contactsArray += [ContactItem(name: (test?["name"]?.stringValue)!,photo: (test?["image"]?.stringValue)!,status: (test?["status_message"]?.stringValue)!)]
+                let contact = value.dictionary
+                self.contactsArray += [ContactItem(name: (contact?["name"]?.stringValue)!,photo: (contact?["imageLarge"]?.stringValue)!,statusMessage: (contact?["status_message"]?.stringValue)!, email: (contact?["email"]?.stringValue)!, employeeId:(contact?["employee_id"]?.stringValue)!, status: (contact?["status"]?.int)!)]
                 
-                self.contactsNameArray.append((test?["name"]?.stringValue)!)
+                //self.contactsNameArray.append((test?["name"]?.stringValue)!)
                 
                 self.tableView.reloadData()
             }
         })
-        self.tableView.reloadData()
+        //tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,7 +58,6 @@ class ContactTableViewController: UITableViewController, UISearchResultsUpdating
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -67,45 +65,58 @@ class ContactTableViewController: UITableViewController, UISearchResultsUpdating
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if self.resultSearchController.isActive{
-            return self.filteredAppleProducts.count
-        }else{
-            return self.contactsArray.count
+        if resultSearchController.isActive && resultSearchController.searchBar.text != ""{
+            return filteredContacts.count
         }
+        
+        return self.contactsArray.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell?
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let contact:ContactItem
         
-        if self.resultSearchController.isActive{
-            cell?.textLabel?.text = self.filteredAppleProducts[indexPath.row]
+        if self.resultSearchController.isActive && resultSearchController.searchBar.text != ""{
+            //cell?.textLabel?.text = filteredContacts[indexPath.row]
+            contact = filteredContacts[indexPath.row]
         }else{
-            cell?.textLabel?.text = self.contactsArray[indexPath.row].name
-            cell?.imageView?.imageFromUrl(self.contactsArray[indexPath.row].photo)
-            cell?.detailTextLabel?.text = self.contactsArray[indexPath.row].status
+            contact = contactsArray[indexPath.row]
+        }
+        cell.textLabel?.text = contact.name
+        cell.imageView?.imageFromUrl(contact.photo)
+        cell.detailTextLabel?.text = contact.statusMessage
+        return cell
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "showDetail"{
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let contact = contactsArray[indexPath.row]
+                let controller = (segue.destination as! UITableViewController) as! ContactDetailViewController
+//                let backButton = UIBarButtonItem()
+                controller.detailContact = contact
+                //controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                //controller.navigationItem.leftItemsSupplementBackButton = true
+//                backButton.title = "eeee"
+//                controller.navigationItem.backBarButtonItem = backButton
+            }
+        }
+    }
+    
+    func filterContentForSearchText(searchText: String, scope: String = "All"){
+        filteredContacts = contactsArray.filter{contact in
+            return contact.name.lowercased().contains(searchText.lowercased())
         }
         
-        return cell!
-
-    }
- 
-    //called when search bar is used
-    func updateSearchResults(for searchController: UISearchController) {
-        
-//        //remove all items in filtered
-//        self.filteredAppleProducts.removeAll(keepingCapacity: false)
-//        
-//        //take whatever in search bar
-//        //we use this to find the text
-//        let searchPredicate = NSPredicate(format: "contactsNameArray CONTAINS[c] %@", searchController.searchBar.text!)
-//        
-//        //find the text in appleproducts
-//        let array = (self.contactsArray as NSArray).filtered(using: searchPredicate)
-//        
-//        self.filteredAppleProducts = array as! [String]
-//        
-        self.tableView.reloadData()
+        tableView.reloadData()
     }
 
+}
+
+extension ContactTableViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController){
+        filterContentForSearchText(searchText: resultSearchController.searchBar.text!)
+    }
 }
