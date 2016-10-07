@@ -9,6 +9,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-be-talkUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Socket.IO-Client-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>82BC7FCDBA924CA67464CDE8F9B946AD</key>
+		<key>0EAB57D157CED31AB7FF47499942D062</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F3CE07718E7FFB99DA0409C86C0D349</key>
+		<key>13353B656A07A8BE63AEA2AF3A3D5F39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A14B6FC2376D413952671D2BEAC5068</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3859A3F34E4332AC0678C373C73F293</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFD5BB4E33662ED9926B6DDF72C4F695</key>
 		<dict>
 			<key>primary</key>
 			<true/>

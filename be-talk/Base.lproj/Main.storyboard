@@ -201,8 +201,8 @@
                     <connections>
                         <segue destination="2Iy-qc-ml2" kind="relationship" relationship="viewControllers" id="5te-Ij-XOG"/>
                         <segue destination="BEM-Nn-nM5" kind="relationship" relationship="viewControllers" id="cyu-if-1vN"/>
-                        <segue destination="5pC-2Q-WMH" kind="relationship" relationship="viewControllers" id="hYR-S6-uCX"/>
                         <segue destination="Wtf-5b-W44" kind="relationship" relationship="viewControllers" id="ocd-kV-yYi"/>
+                        <segue destination="5pC-2Q-WMH" kind="relationship" relationship="viewControllers" id="hYR-S6-uCX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -267,7 +267,7 @@
                                         <rect key="frame" x="0.0" y="288" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D12-1I-K8e" id="7zW-6Q-1F8">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEQ-4K-mQO">
@@ -284,7 +284,7 @@
                                         <rect key="frame" x="0.0" y="332" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vqW-EA-gEZ" id="X5Z-9h-pxg">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqO-kk-Hg1">
@@ -301,7 +301,7 @@
                                         <rect key="frame" x="0.0" y="376" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Xu-fg-d5H" id="wJa-cX-RWe">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employee ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEz-yS-Yg6">
@@ -318,7 +318,7 @@
                                         <rect key="frame" x="0.0" y="420" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zPp-cS-G6F" id="H4j-5T-Xer">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyZ-Wm-sdO">
@@ -339,11 +339,11 @@
                                         <rect key="frame" x="0.0" y="500" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pt5-Nd-aLb" id="Wf1-pA-Ywv">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xy3-lo-Mab">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
+                                                    <frame key="frameInset" minX="15" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
@@ -356,7 +356,7 @@
                                         <rect key="frame" x="0.0" y="544" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TXW-cV-vqj" id="Zf2-hI-zgU">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="messages" translatesAutoresizingMaskIntoConstraints="NO" id="l7h-Sn-Fgs">
@@ -377,7 +377,7 @@
                                         <rect key="frame" x="0.0" y="588" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W3O-ZM-8b2" id="Jp2-as-pAp">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="246-5G-kVF">
@@ -414,74 +414,6 @@
             </objects>
             <point key="canvasLocation" x="-2252" y="-206.44677661169416"/>
         </scene>
-        <!--Contact Details-->
-        <scene sceneID="4fE-os-gKx">
-            <objects>
-                <viewController title="Contact Details" id="Men-kA-cfA" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RsF-a1-adq"/>
-                        <viewControllerLayoutGuide type="bottom" id="T9r-56-9Of"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1HU-eg-y5b">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D2C-rf-Acf">
-                                <frame key="frameInset" minX="99" minY="118" width="176" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyr-3R-sHK">
-                                <frame key="frameInset" minX="16" minY="81" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJS-Y1-RtK">
-                                <frame key="frameInset" minX="16" minY="352" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUZ-ec-cZj">
-                                <frame key="frameInset" minX="16" minY="390" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Message"/>
-                                <connections>
-                                    <action selector="message:" destination="Men-kA-cfA" eventType="touchUpInside" id="ZV3-5Y-13e"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqV-Me-ODk">
-                                <frame key="frameInset" minX="16" minY="323" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWr-vn-TGE">
-                                <frame key="frameInset" minY="20" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Contact" id="ST8-6o-rrv">
-                                        <barButtonItem key="backBarButtonItem" title="Back" id="2gY-NB-7cX"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="imageProfile" destination="D2C-rf-Acf" id="XXL-yK-ydW"/>
-                        <outlet property="textEmail" destination="lqV-Me-ODk" id="PKZ-rI-ijy"/>
-                        <outlet property="textName" destination="uyr-3R-sHK" id="nqi-E8-9y8"/>
-                        <outlet property="textStatusMessage" destination="yJS-Y1-RtK" id="8k7-oL-K7Q"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hDX-Nt-YGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1527" y="-206"/>
-        </scene>
         <!--Contacts Table-->
         <scene sceneID="Lj6-vz-4wY">
             <objects>
@@ -512,13 +444,17 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIJ-pY-LTs">
+                                            <frame key="frameInset" minX="286" minY="5" width="44" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="video"/>
+                                            <connections>
+                                                <action selector="callContact:" destination="0dQ-8b-BnN" eventType="touchUpInside" id="a7c-vW-Q9M"/>
+                                            </connections>
+                                        </button>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="profile" id="D9X-ew-6Qz">
                                             <frame key="frameInset" minX="15" minY="5" width="33" height="33"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="hBY-W3-jaM">
-                                            <frame key="frameInset" minX="266" minY="8" width="35" height="35"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -533,15 +469,61 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Contact" id="QDr-f3-AOG"/>
+                    <connections>
+                        <segue destination="CI3-8z-cat" kind="show" identifier="callContact" id="rqV-X0-Fv9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AoW-P7-DaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3063.1999999999998" y="-206.44677661169416"/>
         </scene>
+        <!--Call View Controller-->
+        <scene sceneID="Ncf-a7-CQm">
+            <objects>
+                <viewController id="CI3-8z-cat" customClass="CallViewController" customModule="be_talk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Gp-lV-Nhp"/>
+                        <viewControllerLayoutGuide type="bottom" id="LOO-Kw-dj4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aDi-uo-ySA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HYT-9T-FKr" userLabel="Remote View" customClass="RTCEAGLVideoView">
+                                <frame key="frameInset" minY="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.19009374999999995" green="0.19009374999999995" blue="0.19009374999999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-N6-3oM" customClass="RTCEAGLVideoView">
+                                <frame key="frameInset" minX="219" minY="80" width="140" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12135416666666665" green="0.12135416666666665" blue="0.12135416666666665" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQa-f6-oE2">
+                                <frame key="frameInset" minX="170" minY="551" width="35" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hang-up"/>
+                                <connections>
+                                    <action selector="endCall:" destination="CI3-8z-cat" eventType="touchUpInside" id="4PB-c1-fKE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="localView" destination="cKr-N6-3oM" id="Us4-hp-lNz"/>
+                        <outlet property="remoteView" destination="HYT-9T-FKr" id="TJN-av-Z1s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbC-HB-UGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3063.1999999999998" y="576.1619190404798"/>
+        </scene>
     </scenes>
     <resources>
         <image name="calls" width="33" height="33"/>
         <image name="groups" width="33" height="33"/>
+        <image name="hang-up" width="33" height="33"/>
         <image name="messages" width="33" height="33"/>
         <image name="profile" width="33" height="33"/>
         <image name="video" width="33" height="33"/>

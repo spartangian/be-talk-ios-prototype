@@ -8,11 +8,11 @@
 
 import UIKit
 import SwiftyJSON
+import SocketIO
 
 class ContactTableViewController: UITableViewController {
 
     var contactsArray = [ContactItem]()
-    //var contactsNameArray = [String]()
     var filteredContacts = [ContactItem]()
     var resultSearchController = UISearchController(searchResultsController: nil)
     
@@ -20,6 +20,8 @@ class ContactTableViewController: UITableViewController {
     @IBOutlet weak var textName: UILabel!
     @IBOutlet weak var imageProfile: UIImageView!
     
+    var room: String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,10 +36,9 @@ class ContactTableViewController: UITableViewController {
         var token: String
         
         token = Request.token!
-        
         data = "?token=\(token)"
         
-        //send REST request for contacts
+        //send REST request for contacts then put results in contactsArray
         RestApiManager.sharedInstance.httpGetRequest(data, path: "contacts", onCompletion: {(response) in
             for (_, value):(String, JSON) in response{
                 
@@ -45,11 +46,26 @@ class ContactTableViewController: UITableViewController {
                 self.contactsArray += [ContactItem(name: (contact?["name"]?.stringValue)!,photo: (contact?["imageLarge"]?.stringValue)!,statusMessage: (contact?["status_message"]?.stringValue)!, email: (contact?["email"]?.stringValue)!, employeeId:(contact?["employee_id"]?.stringValue)!, status: (contact?["status"]?.int)!)]
                 
                 //self.contactsNameArray.append((test?["name"]?.stringValue)!)
-                
+                print("contact loaded")
+            }
+            
+            DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         })
-        //tableView.reloadData()
+
+        tableView.reloadData()
+        
+//        let socket = SocketIOClient(socketURL: URL(string: "https://apprtc.appspot.com")!, config: [.log(true), .forcePolling(true)])
+//        
+//        socket.on("connect") {data, ack in
+//            print("socket connected")
+//            
+//        }
+//        
+//        
+//        print("socket connecting")
+//        socket.connect()
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,11 +84,13 @@ class ContactTableViewController: UITableViewController {
         if resultSearchController.isActive && resultSearchController.searchBar.text != ""{
             return filteredContacts.count
         }
-        
+        print("test")
         return self.contactsArray.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        print("cell for row is loaded")
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let contact:ContactItem
@@ -85,7 +103,7 @@ class ContactTableViewController: UITableViewController {
         }
         cell.textLabel?.text = contact.name
         cell.imageView?.imageFromUrl(contact.photo)
-        cell.detailTextLabel?.text = contact.statusMessage
+        cell.detailTextLabel?.text = contact.employeeId
         return cell
 
     }
@@ -103,6 +121,12 @@ class ContactTableViewController: UITableViewController {
 //                controller.navigationItem.backBarButtonItem = backButton
             }
         }
+        
+        if segue.identifier == "callContact"{
+            let callView: CallViewController = segue.destination as! CallViewController
+            let data: String = sender as! String
+            callView.roomName = data
+        }
     }
     
     func filterContentForSearchText(searchText: String, scope: String = "All"){
@@ -111,6 +135,25 @@ class ContactTableViewController: UITableViewController {
         }
         
         tableView.reloadData()
+    }
+    
+    @IBAction func callContact(_ sender: UIButton) {
+        
+        if let roomNameValue: String = room{
+            if !roomNameValue.isEmpty{
+                self.performSegue(withIdentifier: "callContact", sender: roomNameValue)
+            }else{
+                print("Room name cannot be left blank")
+            }
+        }else{
+            print("Enter the room name")
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell = tableView.cellForRow(at: indexPath)! as UITableViewCell
+        room = selectedCell.detailTextLabel!.text
+        print(room)
     }
 
 }

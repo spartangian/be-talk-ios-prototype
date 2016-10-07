@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Socket.IO-Client-Swift/SocketIO.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SocketRocket/SocketRocket.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Socket.IO-Client-Swift/SocketIO.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SocketRocket/SocketRocket.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
 fi

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052B15491DA735E10088996B /* ContactCellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052B15471DA735E10088996B /* ContactCellTableViewController.swift */; };
+		052B154A1DA735E10088996B /* ContactCellTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052B15481DA735E10088996B /* ContactCellTableViewController.xib */; };
 		053359071D9E07190015158B /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053359061D9E07190015158B /* ContactTableViewController.swift */; };
 		0534F5481D93CEA300C69052 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534F5471D93CEA300C69052 /* UserModel.swift */; };
 		053D9E0D1D8A831700C2732C /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053D9E0C1D8A831700C2732C /* RestApiManager.swift */; };
@@ -18,11 +20,23 @@
 		054360E11D82846B00B601EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054360E01D82846B00B601EC /* Assets.xcassets */; };
 		054360E41D82846B00B601EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054360E21D82846B00B601EC /* LaunchScreen.storyboard */; };
 		054360FA1D82846B00B601EC /* be_talkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360F91D82846B00B601EC /* be_talkUITests.swift */; };
+		05666FEC1DA5F16C00BF6D76 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05666FEB1DA5F16C00BF6D76 /* CallViewController.swift */; };
 		056F5A851DA2259C00A0A58E /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056F5A841DA2259C00A0A58E /* ContactDetailViewController.swift */; };
 		0575F9651D94D138009D059C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575F9641D94D138009D059C /* UIImageView.swift */; };
 		0575F9691D9512E0009D059C /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575F9681D9512E0009D059C /* ContactController.swift */; };
 		05CE0B6B1D90D7B900844F94 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE0B6A1D90D7B900844F94 /* Request.swift */; };
+		05CEF8DB1DA4F88300DE2D94 /* ARDAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8C81DA4F88300DE2D94 /* ARDAppClient.m */; };
+		05CEF8DC1DA4F88300DE2D94 /* ARDMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8CA1DA4F88300DE2D94 /* ARDMessageResponse.m */; };
+		05CEF8DD1DA4F88300DE2D94 /* ARDRegisterResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8CC1DA4F88300DE2D94 /* ARDRegisterResponse.m */; };
+		05CEF8DE1DA4F88300DE2D94 /* ARDSignalingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8CE1DA4F88300DE2D94 /* ARDSignalingMessage.m */; };
+		05CEF8DF1DA4F88300DE2D94 /* ARDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8D01DA4F88300DE2D94 /* ARDUtilities.m */; };
+		05CEF8E01DA4F88300DE2D94 /* ARDWebSocketChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8D21DA4F88300DE2D94 /* ARDWebSocketChannel.m */; };
+		05CEF8E11DA4F88300DE2D94 /* RTCICECandidate+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8D41DA4F88300DE2D94 /* RTCICECandidate+JSON.m */; };
+		05CEF8E21DA4F88300DE2D94 /* RTCICEServer+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8D61DA4F88300DE2D94 /* RTCICEServer+JSON.m */; };
+		05CEF8E31DA4F88300DE2D94 /* RTCMediaConstraints+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8D81DA4F88300DE2D94 /* RTCMediaConstraints+JSON.m */; };
+		05CEF8E41DA4F88300DE2D94 /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8DA1DA4F88300DE2D94 /* RTCSessionDescription+JSON.m */; };
 		05F1243D1D9CDCA5000620B0 /* ContactItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F1243C1D9CDCA5000620B0 /* ContactItem.swift */; };
+		14BB8AC7E9B0BE1FA775679D /* Pods_be_talkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1C0B5A627B9375C1783464 /* Pods_be_talkUITests.framework */; };
 		BEB9F79592FC30CEF54F2496 /* Pods_be_talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918378A727D6A4F0740585CC /* Pods_be_talk.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -44,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		052B15471DA735E10088996B /* ContactCellTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellTableViewController.swift; sourceTree = "<group>"; };
+		052B15481DA735E10088996B /* ContactCellTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactCellTableViewController.xib; sourceTree = "<group>"; };
 		053359061D9E07190015158B /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		0534F5471D93CEA300C69052 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		053D9E0C1D8A831700C2732C /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
@@ -61,14 +77,39 @@
 		054360F91D82846B00B601EC /* be_talkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = be_talkUITests.swift; sourceTree = "<group>"; };
 		054360FB1D82846B00B601EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054361071D828CD600B601EC /* be-talk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "be-talk.entitlements"; sourceTree = "<group>"; };
+		05666FEB1DA5F16C00BF6D76 /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		056F5A841DA2259C00A0A58E /* ContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		0575F9641D94D138009D059C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		0575F9681D9512E0009D059C /* ContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		05CE0B6A1D90D7B900844F94 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		05CEF8C01DA4E33800DE2D94 /* be-talk-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "be-talk-bridging-header.h"; sourceTree = "<group>"; };
+		05CEF8C71DA4F88300DE2D94 /* ARDAppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDAppClient.h; path = Pods/AppRTC/Lib/ARDAppClient.h; sourceTree = SOURCE_ROOT; };
+		05CEF8C81DA4F88300DE2D94 /* ARDAppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARDAppClient.m; path = Pods/AppRTC/Lib/ARDAppClient.m; sourceTree = SOURCE_ROOT; };
+		05CEF8C91DA4F88300DE2D94 /* ARDMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDMessageResponse.h; path = Pods/AppRTC/Lib/ARDMessageResponse.h; sourceTree = SOURCE_ROOT; };
+		05CEF8CA1DA4F88300DE2D94 /* ARDMessageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARDMessageResponse.m; path = Pods/AppRTC/Lib/ARDMessageResponse.m; sourceTree = SOURCE_ROOT; };
+		05CEF8CB1DA4F88300DE2D94 /* ARDRegisterResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDRegisterResponse.h; path = Pods/AppRTC/Lib/ARDRegisterResponse.h; sourceTree = SOURCE_ROOT; };
+		05CEF8CC1DA4F88300DE2D94 /* ARDRegisterResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARDRegisterResponse.m; path = Pods/AppRTC/Lib/ARDRegisterResponse.m; sourceTree = SOURCE_ROOT; };
+		05CEF8CD1DA4F88300DE2D94 /* ARDSignalingMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDSignalingMessage.h; path = Pods/AppRTC/Lib/ARDSignalingMessage.h; sourceTree = SOURCE_ROOT; };
+		05CEF8CE1DA4F88300DE2D94 /* ARDSignalingMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARDSignalingMessage.m; path = Pods/AppRTC/Lib/ARDSignalingMessage.m; sourceTree = SOURCE_ROOT; };
+		05CEF8CF1DA4F88300DE2D94 /* ARDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDUtilities.h; path = Pods/AppRTC/Lib/ARDUtilities.h; sourceTree = SOURCE_ROOT; };
+		05CEF8D01DA4F88300DE2D94 /* ARDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARDUtilities.m; path = Pods/AppRTC/Lib/ARDUtilities.m; sourceTree = SOURCE_ROOT; };
+		05CEF8D11DA4F88300DE2D94 /* ARDWebSocketChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDWebSocketChannel.h; path = Pods/AppRTC/Lib/ARDWebSocketChannel.h; sourceTree = SOURCE_ROOT; };
+		05CEF8D21DA4F88300DE2D94 /* ARDWebSocketChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARDWebSocketChannel.m; path = Pods/AppRTC/Lib/ARDWebSocketChannel.m; sourceTree = SOURCE_ROOT; };
+		05CEF8D31DA4F88300DE2D94 /* RTCICECandidate+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RTCICECandidate+JSON.h"; path = "Pods/AppRTC/Lib/RTCICECandidate+JSON.h"; sourceTree = SOURCE_ROOT; };
+		05CEF8D41DA4F88300DE2D94 /* RTCICECandidate+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RTCICECandidate+JSON.m"; path = "Pods/AppRTC/Lib/RTCICECandidate+JSON.m"; sourceTree = SOURCE_ROOT; };
+		05CEF8D51DA4F88300DE2D94 /* RTCICEServer+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RTCICEServer+JSON.h"; path = "Pods/AppRTC/Lib/RTCICEServer+JSON.h"; sourceTree = SOURCE_ROOT; };
+		05CEF8D61DA4F88300DE2D94 /* RTCICEServer+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RTCICEServer+JSON.m"; path = "Pods/AppRTC/Lib/RTCICEServer+JSON.m"; sourceTree = SOURCE_ROOT; };
+		05CEF8D71DA4F88300DE2D94 /* RTCMediaConstraints+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RTCMediaConstraints+JSON.h"; path = "Pods/AppRTC/Lib/RTCMediaConstraints+JSON.h"; sourceTree = SOURCE_ROOT; };
+		05CEF8D81DA4F88300DE2D94 /* RTCMediaConstraints+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RTCMediaConstraints+JSON.m"; path = "Pods/AppRTC/Lib/RTCMediaConstraints+JSON.m"; sourceTree = SOURCE_ROOT; };
+		05CEF8D91DA4F88300DE2D94 /* RTCSessionDescription+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RTCSessionDescription+JSON.h"; path = "Pods/AppRTC/Lib/RTCSessionDescription+JSON.h"; sourceTree = SOURCE_ROOT; };
+		05CEF8DA1DA4F88300DE2D94 /* RTCSessionDescription+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RTCSessionDescription+JSON.m"; path = "Pods/AppRTC/Lib/RTCSessionDescription+JSON.m"; sourceTree = SOURCE_ROOT; };
 		05F1243C1D9CDCA5000620B0 /* ContactItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactItem.swift; sourceTree = "<group>"; };
 		3C70207114327AF37204E715 /* Pods-be-talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be-talk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-be-talk/Pods-be-talk.debug.xcconfig"; sourceTree = "<group>"; };
 		61DDEE3DCC6E6374CCC57A56 /* Pods-be-talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be-talk.release.xcconfig"; path = "Pods/Target Support Files/Pods-be-talk/Pods-be-talk.release.xcconfig"; sourceTree = "<group>"; };
 		918378A727D6A4F0740585CC /* Pods_be_talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_be_talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1C0B5A627B9375C1783464 /* Pods_be_talkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_be_talkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0CB08D5D70383C663511D3 /* Pods-be-talkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be-talkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-be-talkUITests/Pods-be-talkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F60A5B1954F363F5C701E5F5 /* Pods-be-talkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be-talkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-be-talkUITests/Pods-be-talkUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +132,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BB8AC7E9B0BE1FA775679D /* Pods_be_talkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052B154B1DA736080088996B /* Partial */ = {
+			isa = PBXGroup;
+			children = (
+				052B15471DA735E10088996B /* ContactCellTableViewController.swift */,
+				052B15481DA735E10088996B /* ContactCellTableViewController.xib */,
+			);
+			name = Partial;
+			sourceTree = "<group>";
+		};
 		054360CB1D82846B00B601EC = {
 			isa = PBXGroup;
 			children = (
@@ -123,18 +174,14 @@
 			children = (
 				054361071D828CD600B601EC /* be-talk.entitlements */,
 				054360D71D82846B00B601EC /* AppDelegate.swift */,
-				0575F9641D94D138009D059C /* UIImageView.swift */,
-				05F1243C1D9CDCA5000620B0 /* ContactItem.swift */,
-				054360D91D82846B00B601EC /* ProfileController.swift */,
-				054360DB1D82846B00B601EC /* MessageController.swift */,
-				056F5A841DA2259C00A0A58E /* ContactDetailViewController.swift */,
-				053EC5C41D88C7EA00360F80 /* LoginController.swift */,
-				05CE0B6A1D90D7B900844F94 /* Request.swift */,
-				0575F9681D9512E0009D059C /* ContactController.swift */,
-				0534F5471D93CEA300C69052 /* UserModel.swift */,
+				05CEF8E71DA4FD7100DE2D94 /* Controller */,
+				05CEF8C61DA4F84400DE2D94 /* Library */,
+				05CEF8E51DA4FD4700DE2D94 /* Model */,
+				05CEF8E81DA4FD8800DE2D94 /* Extension */,
 				054360DD1D82846B00B601EC /* Main.storyboard */,
+				052B154B1DA736080088996B /* Partial */,
 				053D9E0C1D8A831700C2732C /* RestApiManager.swift */,
-				053359061D9E07190015158B /* ContactTableViewController.swift */,
+				05CEF8C01DA4E33800DE2D94 /* be-talk-bridging-header.h */,
 				054360E01D82846B00B601EC /* Assets.xcassets */,
 				054360E21D82846B00B601EC /* LaunchScreen.storyboard */,
 				054360E51D82846B00B601EC /* Info.plist */,
@@ -151,11 +198,72 @@
 			path = "be-talkUITests";
 			sourceTree = "<group>";
 		};
+		05CEF8C61DA4F84400DE2D94 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				05CEF8C71DA4F88300DE2D94 /* ARDAppClient.h */,
+				05CEF8C81DA4F88300DE2D94 /* ARDAppClient.m */,
+				05CEF8C91DA4F88300DE2D94 /* ARDMessageResponse.h */,
+				05CEF8CA1DA4F88300DE2D94 /* ARDMessageResponse.m */,
+				05CEF8CB1DA4F88300DE2D94 /* ARDRegisterResponse.h */,
+				05CEF8CC1DA4F88300DE2D94 /* ARDRegisterResponse.m */,
+				05CEF8CD1DA4F88300DE2D94 /* ARDSignalingMessage.h */,
+				05CEF8CE1DA4F88300DE2D94 /* ARDSignalingMessage.m */,
+				05CEF8CF1DA4F88300DE2D94 /* ARDUtilities.h */,
+				05CEF8D01DA4F88300DE2D94 /* ARDUtilities.m */,
+				05CEF8D11DA4F88300DE2D94 /* ARDWebSocketChannel.h */,
+				05CEF8D21DA4F88300DE2D94 /* ARDWebSocketChannel.m */,
+				05CEF8D31DA4F88300DE2D94 /* RTCICECandidate+JSON.h */,
+				05CEF8D41DA4F88300DE2D94 /* RTCICECandidate+JSON.m */,
+				05CEF8D51DA4F88300DE2D94 /* RTCICEServer+JSON.h */,
+				05CEF8D61DA4F88300DE2D94 /* RTCICEServer+JSON.m */,
+				05CEF8D71DA4F88300DE2D94 /* RTCMediaConstraints+JSON.h */,
+				05CEF8D81DA4F88300DE2D94 /* RTCMediaConstraints+JSON.m */,
+				05CEF8D91DA4F88300DE2D94 /* RTCSessionDescription+JSON.h */,
+				05CEF8DA1DA4F88300DE2D94 /* RTCSessionDescription+JSON.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		05CEF8E51DA4FD4700DE2D94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05F1243C1D9CDCA5000620B0 /* ContactItem.swift */,
+				0534F5471D93CEA300C69052 /* UserModel.swift */,
+				05CE0B6A1D90D7B900844F94 /* Request.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		05CEF8E71DA4FD7100DE2D94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				054360D91D82846B00B601EC /* ProfileController.swift */,
+				054360DB1D82846B00B601EC /* MessageController.swift */,
+				056F5A841DA2259C00A0A58E /* ContactDetailViewController.swift */,
+				053EC5C41D88C7EA00360F80 /* LoginController.swift */,
+				0575F9681D9512E0009D059C /* ContactController.swift */,
+				053359061D9E07190015158B /* ContactTableViewController.swift */,
+				05666FEB1DA5F16C00BF6D76 /* CallViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		05CEF8E81DA4FD8800DE2D94 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0575F9641D94D138009D059C /* UIImageView.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		1960EC9C3E94AFBA2420D53C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				3C70207114327AF37204E715 /* Pods-be-talk.debug.xcconfig */,
 				61DDEE3DCC6E6374CCC57A56 /* Pods-be-talk.release.xcconfig */,
+				BA0CB08D5D70383C663511D3 /* Pods-be-talkUITests.debug.xcconfig */,
+				F60A5B1954F363F5C701E5F5 /* Pods-be-talkUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -164,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				918378A727D6A4F0740585CC /* Pods_be_talk.framework */,
+				9E1C0B5A627B9375C1783464 /* Pods_be_talkUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,9 +322,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 054361041D82846B00B601EC /* Build configuration list for PBXNativeTarget "be-talkUITests" */;
 			buildPhases = (
+				5836BEF116CB9A27622FE730 /* [CP] Check Pods Manifest.lock */,
 				054360F11D82846B00B601EC /* Sources */,
 				054360F21D82846B00B601EC /* Frameworks */,
 				054360F31D82846B00B601EC /* Resources */,
+				F6327002BBD2E1AC1E7B7814 /* [CP] Embed Pods Frameworks */,
+				72FBF8D0928D43890481D863 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,6 +398,7 @@
 			files = (
 				054360E41D82846B00B601EC /* LaunchScreen.storyboard in Resources */,
 				054360E11D82846B00B601EC /* Assets.xcassets in Resources */,
+				052B154A1DA735E10088996B /* ContactCellTableViewController.xib in Resources */,
 				054360DF1D82846B00B601EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +435,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-be-talk/Pods-be-talk-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5836BEF116CB9A27622FE730 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		70F68D97BA27009A04B9B44F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +463,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72FBF8D0928D43890481D863 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-be-talkUITests/Pods-be-talkUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE89E4A79106E9F92F935F4A /* [CP] Copy Pods Resources */ = {
@@ -352,6 +495,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-be-talk/Pods-be-talk-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F6327002BBD2E1AC1E7B7814 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-be-talkUITests/Pods-be-talkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -360,16 +518,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				0575F9651D94D138009D059C /* UIImageView.swift in Sources */,
+				05CEF8E11DA4F88300DE2D94 /* RTCICECandidate+JSON.m in Sources */,
 				054360DC1D82846B00B601EC /* MessageController.swift in Sources */,
 				0534F5481D93CEA300C69052 /* UserModel.swift in Sources */,
 				05CE0B6B1D90D7B900844F94 /* Request.swift in Sources */,
+				05CEF8E41DA4F88300DE2D94 /* RTCSessionDescription+JSON.m in Sources */,
+				05CEF8DB1DA4F88300DE2D94 /* ARDAppClient.m in Sources */,
+				05CEF8DD1DA4F88300DE2D94 /* ARDRegisterResponse.m in Sources */,
 				053EC5C51D88C7EA00360F80 /* LoginController.swift in Sources */,
+				05CEF8E31DA4F88300DE2D94 /* RTCMediaConstraints+JSON.m in Sources */,
+				052B15491DA735E10088996B /* ContactCellTableViewController.swift in Sources */,
+				05CEF8E21DA4F88300DE2D94 /* RTCICEServer+JSON.m in Sources */,
 				05F1243D1D9CDCA5000620B0 /* ContactItem.swift in Sources */,
+				05CEF8DE1DA4F88300DE2D94 /* ARDSignalingMessage.m in Sources */,
 				054360D81D82846B00B601EC /* AppDelegate.swift in Sources */,
+				05CEF8DF1DA4F88300DE2D94 /* ARDUtilities.m in Sources */,
 				053D9E0D1D8A831700C2732C /* RestApiManager.swift in Sources */,
 				053359071D9E07190015158B /* ContactTableViewController.swift in Sources */,
+				05CEF8E01DA4F88300DE2D94 /* ARDWebSocketChannel.m in Sources */,
+				05CEF8DC1DA4F88300DE2D94 /* ARDMessageResponse.m in Sources */,
 				054360DA1D82846B00B601EC /* ProfileController.swift in Sources */,
 				056F5A851DA2259C00A0A58E /* ContactDetailViewController.swift in Sources */,
+				05666FEC1DA5F16C00BF6D76 /* CallViewController.swift in Sources */,
 				0575F9691D9512E0009D059C /* ContactController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,15 +690,32 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "be-talk/be-talk.entitlements";
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MVG95J96JN;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/libjingle_peerconnection\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/libjingle_peerconnection\"",
+				);
 				INFOPLIST_FILE = "be-talk/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PODS_ROOT)/libjingle_peerconnection\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/libjingle_peerconnection/libjingle_peerconnection\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.be-talk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Pods/SwiftyJSON/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "be-talk/be-talk-bridging-header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -538,15 +725,32 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "be-talk/be-talk.entitlements";
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MVG95J96JN;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/libjingle_peerconnection\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/libjingle_peerconnection\"",
+				);
 				INFOPLIST_FILE = "be-talk/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PODS_ROOT)/libjingle_peerconnection\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/libjingle_peerconnection/libjingle_peerconnection\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.be-talk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Pods/SwiftyJSON/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "be-talk/be-talk-bridging-header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -580,6 +784,7 @@
 		};
 		054361051D82846B00B601EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0CB08D5D70383C663511D3 /* Pods-be-talkUITests.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
 				INFOPLIST_FILE = "be-talkUITests/Info.plist";
@@ -593,6 +798,7 @@
 		};
 		054361061D82846B00B601EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F60A5B1954F363F5C701E5F5 /* Pods-be-talkUITests.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
 				INFOPLIST_FILE = "be-talkUITests/Info.plist";

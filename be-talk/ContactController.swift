@@ -20,8 +20,6 @@ class ContactController: UIViewController, UITableViewDelegate, UITableViewDataS
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.contactsArray += [ContactItem(name: "Taku", photo:"test", status: "test")]
-        //self.contactsArray += [ContactItem(name: "Masa", photo:"test", status: "test")]
         
         self.tableView.reloadData()
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")

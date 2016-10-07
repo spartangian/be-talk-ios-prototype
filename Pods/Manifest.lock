@@ -1,21 +1,31 @@
 PODS:
+  - libjingle_peerconnection (11177.2.0)
+  - Socket.IO-Client-Swift (8.0.2)
+  - SocketRocket (0.5.1)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
-  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - libjingle_peerconnection
+  - Socket.IO-Client-Swift
+  - SocketRocket
+  - SwiftyJSON (from `https://github.com/acegreen/SwiftyJSON.git`, branch `swift3`)
 
 EXTERNAL SOURCES:
   SwiftyJSON:
-    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+    :branch: swift3
+    :git: https://github.com/acegreen/SwiftyJSON.git
 
 CHECKOUT OPTIONS:
   SwiftyJSON:
-    :commit: 73670b94292b8d8496c398a973f56ac67789ba9f
-    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+    :commit: 8971384559780e631b041ac91b16734a396d4c14
+    :git: https://github.com/acegreen/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  libjingle_peerconnection: 3458f646ddd61f08a9f3a0c43fb01fff5c165eb8
+  Socket.IO-Client-Swift: 136598e4a81a42b0e6855e7f94a0e5a6efdc5ff8
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 969c98c46d05cb3aaa9f76e14782c87f02cf8792
+PODFILE CHECKSUM: 3eb1066876ff5c95a424a1078f4b093c5a4226b4
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.rc.2
