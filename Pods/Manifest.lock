@@ -1,10 +1,14 @@
 PODS:
+  - JSQMessagesViewController (7.3.4):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
   - libjingle_peerconnection (11177.2.0)
   - Socket.IO-Client-Swift (8.0.2)
   - SocketRocket (0.5.1)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - JSQMessagesViewController
   - libjingle_peerconnection
   - Socket.IO-Client-Swift
   - SocketRocket
@@ -21,11 +25,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/acegreen/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   libjingle_peerconnection: 3458f646ddd61f08a9f3a0c43fb01fff5c165eb8
   Socket.IO-Client-Swift: 136598e4a81a42b0e6855e7f94a0e5a6efdc5ff8
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 3eb1066876ff5c95a424a1078f4b093c5a4226b4
+PODFILE CHECKSUM: 9f4137d2125938d748f93b62ecde95fae36e34d9
 
 COCOAPODS: 1.1.0.rc.2

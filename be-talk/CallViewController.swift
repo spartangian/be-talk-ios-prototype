@@ -130,6 +130,9 @@ class CallViewController: UIViewController, ARDAppClientDelegate, RTCEAGLVideoVi
     
     @IBAction func endCall(_ sender: AnyObject) {
         disconnect()
-        self.navigationController?.popToRootViewController(animated: true)
+        //popViewController(animated:) returns UIViewController?, 
+        //and the compiler is giving that warning since you aren't capturing the value. 
+        //The solution is to assign it to an underscore:
+        _ = self.navigationController?.popToRootViewController(animated: true)
     }
 }

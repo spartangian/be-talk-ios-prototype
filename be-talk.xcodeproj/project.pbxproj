@@ -7,24 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		052B15491DA735E10088996B /* ContactCellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052B15471DA735E10088996B /* ContactCellTableViewController.swift */; };
-		052B154A1DA735E10088996B /* ContactCellTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052B15481DA735E10088996B /* ContactCellTableViewController.xib */; };
+		0528C1581DB74239009B3FC7 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528C1561DB74239009B3FC7 /* MessageTableViewCell.swift */; };
+		0528C1591DB74239009B3FC7 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0528C1571DB74239009B3FC7 /* MessageTableViewCell.xib */; };
+		0528C15B1DB74346009B3FC7 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528C15A1DB74346009B3FC7 /* MessageTableViewController.swift */; };
+		0528C15D1DB745FC009B3FC7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528C15C1DB745FC009B3FC7 /* Message.swift */; };
 		053359071D9E07190015158B /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053359061D9E07190015158B /* ContactTableViewController.swift */; };
-		0534F5481D93CEA300C69052 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534F5471D93CEA300C69052 /* UserModel.swift */; };
+		0534F5481D93CEA300C69052 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534F5471D93CEA300C69052 /* User.swift */; };
+		0537CFBA1DB9F959008D8ED1 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0537CFB91DB9F959008D8ED1 /* ChatBubble.swift */; };
 		053D9E0D1D8A831700C2732C /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053D9E0C1D8A831700C2732C /* RestApiManager.swift */; };
-		053EC5C51D88C7EA00360F80 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053EC5C41D88C7EA00360F80 /* LoginController.swift */; };
+		053EC5C51D88C7EA00360F80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053EC5C41D88C7EA00360F80 /* LoginViewController.swift */; };
 		054360D81D82846B00B601EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360D71D82846B00B601EC /* AppDelegate.swift */; };
-		054360DA1D82846B00B601EC /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360D91D82846B00B601EC /* ProfileController.swift */; };
-		054360DC1D82846B00B601EC /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360DB1D82846B00B601EC /* MessageController.swift */; };
+		054360DA1D82846B00B601EC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360D91D82846B00B601EC /* ProfileViewController.swift */; };
 		054360DF1D82846B00B601EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054360DD1D82846B00B601EC /* Main.storyboard */; };
 		054360E11D82846B00B601EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054360E01D82846B00B601EC /* Assets.xcassets */; };
 		054360E41D82846B00B601EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054360E21D82846B00B601EC /* LaunchScreen.storyboard */; };
 		054360FA1D82846B00B601EC /* be_talkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054360F91D82846B00B601EC /* be_talkUITests.swift */; };
 		05666FEC1DA5F16C00BF6D76 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05666FEB1DA5F16C00BF6D76 /* CallViewController.swift */; };
+		0568E6B61DB068870095F41A /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E69E1DB068870095F41A /* SocketAckEmitter.swift */; };
+		0568E6B71DB068870095F41A /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E69F1DB068870095F41A /* SocketAckManager.swift */; };
+		0568E6B81DB068870095F41A /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6A01DB068870095F41A /* SocketAnyEvent.swift */; };
+		0568E6B91DB068870095F41A /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6A11DB068870095F41A /* SocketClientManager.swift */; };
+		0568E6BA1DB068870095F41A /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6A21DB068870095F41A /* SocketEngine.swift */; };
+		0568E6BB1DB068870095F41A /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6A31DB068870095F41A /* SocketEngineClient.swift */; };
+		0568E6BC1DB068870095F41A /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6A41DB068870095F41A /* SocketEnginePacketType.swift */; };
+		0568E6BD1DB068870095F41A /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6A51DB068870095F41A /* SocketEnginePollable.swift */; };
+		0568E6BE1DB068870095F41A /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6A61DB068870095F41A /* SocketEngineSpec.swift */; };
+		0568E6BF1DB068870095F41A /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6A71DB068870095F41A /* SocketEngineWebsocket.swift */; };
+		0568E6C01DB068870095F41A /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6A81DB068870095F41A /* SocketEventHandler.swift */; };
+		0568E6C11DB068870095F41A /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6A91DB068870095F41A /* SocketExtensions.swift */; };
+		0568E6C21DB068870095F41A /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6AA1DB068870095F41A /* SocketIOClient.swift */; };
+		0568E6C31DB068870095F41A /* SocketIOClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6AB1DB068870095F41A /* SocketIOClientConfiguration.swift */; };
+		0568E6C41DB068870095F41A /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6AC1DB068870095F41A /* SocketIOClientOption.swift */; };
+		0568E6C51DB068870095F41A /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6AD1DB068870095F41A /* SocketIOClientSpec.swift */; };
+		0568E6C61DB068870095F41A /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6AE1DB068870095F41A /* SocketIOClientStatus.swift */; };
+		0568E6C71DB068870095F41A /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6AF1DB068870095F41A /* SocketLogger.swift */; };
+		0568E6C81DB068870095F41A /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6B01DB068870095F41A /* SocketPacket.swift */; };
+		0568E6C91DB068870095F41A /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6B11DB068870095F41A /* SocketParsable.swift */; };
+		0568E6CA1DB068870095F41A /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6B21DB068870095F41A /* SocketStringReader.swift */; };
+		0568E6CB1DB068870095F41A /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6B31DB068870095F41A /* SocketTypes.swift */; };
+		0568E6CC1DB068870095F41A /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6B41DB068870095F41A /* SSLSecurity.swift */; };
+		0568E6CD1DB068870095F41A /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6B51DB068870095F41A /* WebSocket.swift */; };
+		0568E6CF1DB069320095F41A /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E6CE1DB069320095F41A /* SocketIOManager.swift */; };
 		056F5A851DA2259C00A0A58E /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056F5A841DA2259C00A0A58E /* ContactDetailViewController.swift */; };
 		0575F9651D94D138009D059C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575F9641D94D138009D059C /* UIImageView.swift */; };
-		0575F9691D9512E0009D059C /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575F9681D9512E0009D059C /* ContactController.swift */; };
-		05CE0B6B1D90D7B900844F94 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE0B6A1D90D7B900844F94 /* Request.swift */; };
+		0582D4A51DE81A3B00576B10 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0582D4A41DE81A3B00576B10 /* ChatViewController.swift */; };
+		058AEBB21DDC42EA00431462 /* ChatScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058AEBB11DDC42EA00431462 /* ChatScrollView.swift */; };
+		058AEBB41DDC517800431462 /* ScrollViewEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058AEBB31DDC517800431462 /* ScrollViewEdge.swift */; };
+		059D6E061DB5E5A9006CDEFE /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D6E041DB5E5A9006CDEFE /* ContactTableViewCell.swift */; };
+		059D6E071DB5E5A9006CDEFE /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 059D6E051DB5E5A9006CDEFE /* ContactTableViewCell.xib */; };
+		05CE0B6B1D90D7B900844F94 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE0B6A1D90D7B900844F94 /* Config.swift */; };
 		05CEF8DB1DA4F88300DE2D94 /* ARDAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8C81DA4F88300DE2D94 /* ARDAppClient.m */; };
 		05CEF8DC1DA4F88300DE2D94 /* ARDMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8CA1DA4F88300DE2D94 /* ARDMessageResponse.m */; };
 		05CEF8DD1DA4F88300DE2D94 /* ARDRegisterResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8CC1DA4F88300DE2D94 /* ARDRegisterResponse.m */; };
@@ -35,7 +66,9 @@
 		05CEF8E21DA4F88300DE2D94 /* RTCICEServer+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8D61DA4F88300DE2D94 /* RTCICEServer+JSON.m */; };
 		05CEF8E31DA4F88300DE2D94 /* RTCMediaConstraints+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8D81DA4F88300DE2D94 /* RTCMediaConstraints+JSON.m */; };
 		05CEF8E41DA4F88300DE2D94 /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEF8DA1DA4F88300DE2D94 /* RTCSessionDescription+JSON.m */; };
-		05F1243D1D9CDCA5000620B0 /* ContactItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F1243C1D9CDCA5000620B0 /* ContactItem.swift */; };
+		05D0E1D71DBDA1E400E0A127 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D0E1D61DBDA1E400E0A127 /* Chat.swift */; };
+		05D0E1DA1DBDA97300E0A127 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D0E1D91DBDA97300E0A127 /* Util.swift */; };
+		05F1243D1D9CDCA5000620B0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F1243C1D9CDCA5000620B0 /* Contact.swift */; };
 		14BB8AC7E9B0BE1FA775679D /* Pods_be_talkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1C0B5A627B9375C1783464 /* Pods_be_talkUITests.framework */; };
 		BEB9F79592FC30CEF54F2496 /* Pods_be_talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918378A727D6A4F0740585CC /* Pods_be_talk.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -58,16 +91,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		052B15471DA735E10088996B /* ContactCellTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellTableViewController.swift; sourceTree = "<group>"; };
-		052B15481DA735E10088996B /* ContactCellTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactCellTableViewController.xib; sourceTree = "<group>"; };
+		0528C1561DB74239009B3FC7 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		0528C1571DB74239009B3FC7 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		0528C15A1DB74346009B3FC7 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		0528C15C1DB745FC009B3FC7 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		053359061D9E07190015158B /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
-		0534F5471D93CEA300C69052 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		0534F5471D93CEA300C69052 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0537CFB91DB9F959008D8ED1 /* ChatBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		053D9E0C1D8A831700C2732C /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
-		053EC5C41D88C7EA00360F80 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		053EC5C41D88C7EA00360F80 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		054360D41D82846B00B601EC /* be-talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "be-talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		054360D71D82846B00B601EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		054360D91D82846B00B601EC /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		054360DB1D82846B00B601EC /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		054360D91D82846B00B601EC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		054360DE1D82846B00B601EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		054360E01D82846B00B601EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		054360E31D82846B00B601EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,10 +113,39 @@
 		054360FB1D82846B00B601EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054361071D828CD600B601EC /* be-talk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "be-talk.entitlements"; sourceTree = "<group>"; };
 		05666FEB1DA5F16C00BF6D76 /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		0568E69E1DB068870095F41A /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckEmitter.swift; sourceTree = "<group>"; };
+		0568E69F1DB068870095F41A /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		0568E6A01DB068870095F41A /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		0568E6A11DB068870095F41A /* SocketClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientManager.swift; sourceTree = "<group>"; };
+		0568E6A21DB068870095F41A /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		0568E6A31DB068870095F41A /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		0568E6A41DB068870095F41A /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		0568E6A51DB068870095F41A /* SocketEnginePollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePollable.swift; sourceTree = "<group>"; };
+		0568E6A61DB068870095F41A /* SocketEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineSpec.swift; sourceTree = "<group>"; };
+		0568E6A71DB068870095F41A /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		0568E6A81DB068870095F41A /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		0568E6A91DB068870095F41A /* SocketExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketExtensions.swift; sourceTree = "<group>"; };
+		0568E6AA1DB068870095F41A /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		0568E6AB1DB068870095F41A /* SocketIOClientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientConfiguration.swift; sourceTree = "<group>"; };
+		0568E6AC1DB068870095F41A /* SocketIOClientOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientOption.swift; sourceTree = "<group>"; };
+		0568E6AD1DB068870095F41A /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientSpec.swift; sourceTree = "<group>"; };
+		0568E6AE1DB068870095F41A /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientStatus.swift; sourceTree = "<group>"; };
+		0568E6AF1DB068870095F41A /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		0568E6B01DB068870095F41A /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		0568E6B11DB068870095F41A /* SocketParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketParsable.swift; sourceTree = "<group>"; };
+		0568E6B21DB068870095F41A /* SocketStringReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketStringReader.swift; sourceTree = "<group>"; };
+		0568E6B31DB068870095F41A /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		0568E6B41DB068870095F41A /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		0568E6B51DB068870095F41A /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		0568E6CE1DB069320095F41A /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		056F5A841DA2259C00A0A58E /* ContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		0575F9641D94D138009D059C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		0575F9681D9512E0009D059C /* ContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
-		05CE0B6A1D90D7B900844F94 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		0582D4A41DE81A3B00576B10 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		058AEBB11DDC42EA00431462 /* ChatScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatScrollView.swift; sourceTree = "<group>"; };
+		058AEBB31DDC517800431462 /* ScrollViewEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewEdge.swift; sourceTree = "<group>"; };
+		059D6E041DB5E5A9006CDEFE /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		059D6E051DB5E5A9006CDEFE /* ContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		05CE0B6A1D90D7B900844F94 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		05CEF8C01DA4E33800DE2D94 /* be-talk-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "be-talk-bridging-header.h"; sourceTree = "<group>"; };
 		05CEF8C71DA4F88300DE2D94 /* ARDAppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDAppClient.h; path = Pods/AppRTC/Lib/ARDAppClient.h; sourceTree = SOURCE_ROOT; };
 		05CEF8C81DA4F88300DE2D94 /* ARDAppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARDAppClient.m; path = Pods/AppRTC/Lib/ARDAppClient.m; sourceTree = SOURCE_ROOT; };
@@ -103,7 +167,9 @@
 		05CEF8D81DA4F88300DE2D94 /* RTCMediaConstraints+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RTCMediaConstraints+JSON.m"; path = "Pods/AppRTC/Lib/RTCMediaConstraints+JSON.m"; sourceTree = SOURCE_ROOT; };
 		05CEF8D91DA4F88300DE2D94 /* RTCSessionDescription+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RTCSessionDescription+JSON.h"; path = "Pods/AppRTC/Lib/RTCSessionDescription+JSON.h"; sourceTree = SOURCE_ROOT; };
 		05CEF8DA1DA4F88300DE2D94 /* RTCSessionDescription+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RTCSessionDescription+JSON.m"; path = "Pods/AppRTC/Lib/RTCSessionDescription+JSON.m"; sourceTree = SOURCE_ROOT; };
-		05F1243C1D9CDCA5000620B0 /* ContactItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactItem.swift; sourceTree = "<group>"; };
+		05D0E1D61DBDA1E400E0A127 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		05D0E1D91DBDA97300E0A127 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		05F1243C1D9CDCA5000620B0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		3C70207114327AF37204E715 /* Pods-be-talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be-talk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-be-talk/Pods-be-talk.debug.xcconfig"; sourceTree = "<group>"; };
 		61DDEE3DCC6E6374CCC57A56 /* Pods-be-talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be-talk.release.xcconfig"; path = "Pods/Target Support Files/Pods-be-talk/Pods-be-talk.release.xcconfig"; sourceTree = "<group>"; };
 		918378A727D6A4F0740585CC /* Pods_be_talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_be_talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,8 +208,12 @@
 		052B154B1DA736080088996B /* Partial */ = {
 			isa = PBXGroup;
 			children = (
-				052B15471DA735E10088996B /* ContactCellTableViewController.swift */,
-				052B15481DA735E10088996B /* ContactCellTableViewController.xib */,
+				059D6E041DB5E5A9006CDEFE /* ContactTableViewCell.swift */,
+				058AEBB11DDC42EA00431462 /* ChatScrollView.swift */,
+				0537CFB91DB9F959008D8ED1 /* ChatBubble.swift */,
+				059D6E051DB5E5A9006CDEFE /* ContactTableViewCell.xib */,
+				0528C1561DB74239009B3FC7 /* MessageTableViewCell.swift */,
+				0528C1571DB74239009B3FC7 /* MessageTableViewCell.xib */,
 			);
 			name = Partial;
 			sourceTree = "<group>";
@@ -151,6 +221,7 @@
 		054360CB1D82846B00B601EC = {
 			isa = PBXGroup;
 			children = (
+				0568E69D1DB068870095F41A /* Socket */,
 				054360D61D82846B00B601EC /* be-talk */,
 				054360F81D82846B00B601EC /* be-talkUITests */,
 				054360D51D82846B00B601EC /* Products */,
@@ -172,15 +243,18 @@
 		054360D61D82846B00B601EC /* be-talk */ = {
 			isa = PBXGroup;
 			children = (
+				0565F8491DB89CEE00657F78 /* xib */,
 				054361071D828CD600B601EC /* be-talk.entitlements */,
 				054360D71D82846B00B601EC /* AppDelegate.swift */,
-				05CEF8E71DA4FD7100DE2D94 /* Controller */,
+				05CEF8E71DA4FD7100DE2D94 /* Controllers */,
 				05CEF8C61DA4F84400DE2D94 /* Library */,
-				05CEF8E51DA4FD4700DE2D94 /* Model */,
-				05CEF8E81DA4FD8800DE2D94 /* Extension */,
+				05CEF8E51DA4FD4700DE2D94 /* Models */,
+				05CEF8E81DA4FD8800DE2D94 /* Extensions */,
 				054360DD1D82846B00B601EC /* Main.storyboard */,
-				052B154B1DA736080088996B /* Partial */,
+				05D0E1D81DBDA84800E0A127 /* Support */,
+				05D0E1D51DBD9CF000E0A127 /* Views */,
 				053D9E0C1D8A831700C2732C /* RestApiManager.swift */,
+				0568E6CE1DB069320095F41A /* SocketIOManager.swift */,
 				05CEF8C01DA4E33800DE2D94 /* be-talk-bridging-header.h */,
 				054360E01D82846B00B601EC /* Assets.xcassets */,
 				054360E21D82846B00B601EC /* LaunchScreen.storyboard */,
@@ -196,6 +270,45 @@
 				054360FB1D82846B00B601EC /* Info.plist */,
 			);
 			path = "be-talkUITests";
+			sourceTree = "<group>";
+		};
+		0565F8491DB89CEE00657F78 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = xib;
+			sourceTree = "<group>";
+		};
+		0568E69D1DB068870095F41A /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				0568E69E1DB068870095F41A /* SocketAckEmitter.swift */,
+				0568E69F1DB068870095F41A /* SocketAckManager.swift */,
+				0568E6A01DB068870095F41A /* SocketAnyEvent.swift */,
+				0568E6A11DB068870095F41A /* SocketClientManager.swift */,
+				0568E6A21DB068870095F41A /* SocketEngine.swift */,
+				0568E6A31DB068870095F41A /* SocketEngineClient.swift */,
+				0568E6A41DB068870095F41A /* SocketEnginePacketType.swift */,
+				0568E6A51DB068870095F41A /* SocketEnginePollable.swift */,
+				0568E6A61DB068870095F41A /* SocketEngineSpec.swift */,
+				0568E6A71DB068870095F41A /* SocketEngineWebsocket.swift */,
+				0568E6A81DB068870095F41A /* SocketEventHandler.swift */,
+				0568E6A91DB068870095F41A /* SocketExtensions.swift */,
+				0568E6AA1DB068870095F41A /* SocketIOClient.swift */,
+				0568E6AB1DB068870095F41A /* SocketIOClientConfiguration.swift */,
+				0568E6AC1DB068870095F41A /* SocketIOClientOption.swift */,
+				0568E6AD1DB068870095F41A /* SocketIOClientSpec.swift */,
+				0568E6AE1DB068870095F41A /* SocketIOClientStatus.swift */,
+				0568E6AF1DB068870095F41A /* SocketLogger.swift */,
+				0568E6B01DB068870095F41A /* SocketPacket.swift */,
+				0568E6B11DB068870095F41A /* SocketParsable.swift */,
+				0568E6B21DB068870095F41A /* SocketStringReader.swift */,
+				0568E6B31DB068870095F41A /* SocketTypes.swift */,
+				0568E6B41DB068870095F41A /* SSLSecurity.swift */,
+				0568E6B51DB068870095F41A /* WebSocket.swift */,
+			);
+			name = Socket;
+			path = "be-talk/Socket";
 			sourceTree = "<group>";
 		};
 		05CEF8C61DA4F84400DE2D94 /* Library */ = {
@@ -225,36 +338,55 @@
 			name = Library;
 			sourceTree = "<group>";
 		};
-		05CEF8E51DA4FD4700DE2D94 /* Model */ = {
+		05CEF8E51DA4FD4700DE2D94 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				05F1243C1D9CDCA5000620B0 /* ContactItem.swift */,
-				0534F5471D93CEA300C69052 /* UserModel.swift */,
-				05CE0B6A1D90D7B900844F94 /* Request.swift */,
+				05F1243C1D9CDCA5000620B0 /* Contact.swift */,
+				0534F5471D93CEA300C69052 /* User.swift */,
+				0528C15C1DB745FC009B3FC7 /* Message.swift */,
+				05D0E1D61DBDA1E400E0A127 /* Chat.swift */,
+				05CE0B6A1D90D7B900844F94 /* Config.swift */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		05CEF8E71DA4FD7100DE2D94 /* Controller */ = {
+		05CEF8E71DA4FD7100DE2D94 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				054360D91D82846B00B601EC /* ProfileController.swift */,
-				054360DB1D82846B00B601EC /* MessageController.swift */,
+				0528C15A1DB74346009B3FC7 /* MessageTableViewController.swift */,
+				0582D4A41DE81A3B00576B10 /* ChatViewController.swift */,
+				054360D91D82846B00B601EC /* ProfileViewController.swift */,
+				053EC5C41D88C7EA00360F80 /* LoginViewController.swift */,
 				056F5A841DA2259C00A0A58E /* ContactDetailViewController.swift */,
-				053EC5C41D88C7EA00360F80 /* LoginController.swift */,
-				0575F9681D9512E0009D059C /* ContactController.swift */,
 				053359061D9E07190015158B /* ContactTableViewController.swift */,
 				05666FEB1DA5F16C00BF6D76 /* CallViewController.swift */,
 			);
-			name = Controller;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
-		05CEF8E81DA4FD8800DE2D94 /* Extension */ = {
+		05CEF8E81DA4FD8800DE2D94 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				0575F9641D94D138009D059C /* UIImageView.swift */,
+				058AEBB31DDC517800431462 /* ScrollViewEdge.swift */,
 			);
-			name = Extension;
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		05D0E1D51DBD9CF000E0A127 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				052B154B1DA736080088996B /* Partial */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		05D0E1D81DBDA84800E0A127 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				05D0E1D91DBDA97300E0A127 /* Util.swift */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 		1960EC9C3E94AFBA2420D53C /* Pods */ = {
@@ -346,7 +478,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Tmjp Engineering";
 				TargetAttributes = {
 					054360D31D82846B00B601EC = {
@@ -397,8 +529,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				054360E41D82846B00B601EC /* LaunchScreen.storyboard in Resources */,
+				0528C1591DB74239009B3FC7 /* MessageTableViewCell.xib in Resources */,
 				054360E11D82846B00B601EC /* Assets.xcassets in Resources */,
-				052B154A1DA735E10088996B /* ContactCellTableViewController.xib in Resources */,
+				059D6E071DB5E5A9006CDEFE /* ContactTableViewCell.xib in Resources */,
 				054360DF1D82846B00B601EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,30 +650,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0568E6C61DB068870095F41A /* SocketIOClientStatus.swift in Sources */,
+				0568E6CD1DB068870095F41A /* WebSocket.swift in Sources */,
 				0575F9651D94D138009D059C /* UIImageView.swift in Sources */,
 				05CEF8E11DA4F88300DE2D94 /* RTCICECandidate+JSON.m in Sources */,
-				054360DC1D82846B00B601EC /* MessageController.swift in Sources */,
-				0534F5481D93CEA300C69052 /* UserModel.swift in Sources */,
-				05CE0B6B1D90D7B900844F94 /* Request.swift in Sources */,
+				0568E6B81DB068870095F41A /* SocketAnyEvent.swift in Sources */,
+				0568E6BE1DB068870095F41A /* SocketEngineSpec.swift in Sources */,
+				0568E6CB1DB068870095F41A /* SocketTypes.swift in Sources */,
+				0568E6CA1DB068870095F41A /* SocketStringReader.swift in Sources */,
+				0534F5481D93CEA300C69052 /* User.swift in Sources */,
+				0528C15D1DB745FC009B3FC7 /* Message.swift in Sources */,
+				0582D4A51DE81A3B00576B10 /* ChatViewController.swift in Sources */,
+				05CE0B6B1D90D7B900844F94 /* Config.swift in Sources */,
+				0568E6BA1DB068870095F41A /* SocketEngine.swift in Sources */,
 				05CEF8E41DA4F88300DE2D94 /* RTCSessionDescription+JSON.m in Sources */,
+				0568E6B61DB068870095F41A /* SocketAckEmitter.swift in Sources */,
 				05CEF8DB1DA4F88300DE2D94 /* ARDAppClient.m in Sources */,
 				05CEF8DD1DA4F88300DE2D94 /* ARDRegisterResponse.m in Sources */,
-				053EC5C51D88C7EA00360F80 /* LoginController.swift in Sources */,
+				053EC5C51D88C7EA00360F80 /* LoginViewController.swift in Sources */,
+				0568E6CF1DB069320095F41A /* SocketIOManager.swift in Sources */,
 				05CEF8E31DA4F88300DE2D94 /* RTCMediaConstraints+JSON.m in Sources */,
-				052B15491DA735E10088996B /* ContactCellTableViewController.swift in Sources */,
+				0568E6C11DB068870095F41A /* SocketExtensions.swift in Sources */,
+				0528C1581DB74239009B3FC7 /* MessageTableViewCell.swift in Sources */,
+				05D0E1DA1DBDA97300E0A127 /* Util.swift in Sources */,
+				0568E6BB1DB068870095F41A /* SocketEngineClient.swift in Sources */,
 				05CEF8E21DA4F88300DE2D94 /* RTCICEServer+JSON.m in Sources */,
-				05F1243D1D9CDCA5000620B0 /* ContactItem.swift in Sources */,
+				0568E6C81DB068870095F41A /* SocketPacket.swift in Sources */,
+				05F1243D1D9CDCA5000620B0 /* Contact.swift in Sources */,
+				0568E6B71DB068870095F41A /* SocketAckManager.swift in Sources */,
+				058AEBB21DDC42EA00431462 /* ChatScrollView.swift in Sources */,
+				0568E6C31DB068870095F41A /* SocketIOClientConfiguration.swift in Sources */,
+				058AEBB41DDC517800431462 /* ScrollViewEdge.swift in Sources */,
 				05CEF8DE1DA4F88300DE2D94 /* ARDSignalingMessage.m in Sources */,
 				054360D81D82846B00B601EC /* AppDelegate.swift in Sources */,
 				05CEF8DF1DA4F88300DE2D94 /* ARDUtilities.m in Sources */,
+				0568E6C41DB068870095F41A /* SocketIOClientOption.swift in Sources */,
 				053D9E0D1D8A831700C2732C /* RestApiManager.swift in Sources */,
+				0568E6CC1DB068870095F41A /* SSLSecurity.swift in Sources */,
 				053359071D9E07190015158B /* ContactTableViewController.swift in Sources */,
 				05CEF8E01DA4F88300DE2D94 /* ARDWebSocketChannel.m in Sources */,
+				0568E6C91DB068870095F41A /* SocketParsable.swift in Sources */,
+				059D6E061DB5E5A9006CDEFE /* ContactTableViewCell.swift in Sources */,
 				05CEF8DC1DA4F88300DE2D94 /* ARDMessageResponse.m in Sources */,
-				054360DA1D82846B00B601EC /* ProfileController.swift in Sources */,
+				0568E6C21DB068870095F41A /* SocketIOClient.swift in Sources */,
+				0568E6C51DB068870095F41A /* SocketIOClientSpec.swift in Sources */,
+				0568E6C71DB068870095F41A /* SocketLogger.swift in Sources */,
+				0568E6BF1DB068870095F41A /* SocketEngineWebsocket.swift in Sources */,
+				0568E6B91DB068870095F41A /* SocketClientManager.swift in Sources */,
+				0528C15B1DB74346009B3FC7 /* MessageTableViewController.swift in Sources */,
+				054360DA1D82846B00B601EC /* ProfileViewController.swift in Sources */,
 				056F5A851DA2259C00A0A58E /* ContactDetailViewController.swift in Sources */,
+				0537CFBA1DB9F959008D8ED1 /* ChatBubble.swift in Sources */,
+				0568E6BC1DB068870095F41A /* SocketEnginePacketType.swift in Sources */,
+				05D0E1D71DBDA1E400E0A127 /* Chat.swift in Sources */,
 				05666FEC1DA5F16C00BF6D76 /* CallViewController.swift in Sources */,
-				0575F9691D9512E0009D059C /* ContactController.swift in Sources */,
+				0568E6C01DB068870095F41A /* SocketEventHandler.swift in Sources */,
+				0568E6BD1DB068870095F41A /* SocketEnginePollable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

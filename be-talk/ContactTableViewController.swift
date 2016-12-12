@@ -12,16 +12,13 @@ import SocketIO
 
 class ContactTableViewController: UITableViewController {
 
-    var contactsArray = [ContactItem]()
-    var filteredContacts = [ContactItem]()
+    var contactsArray = [Contact]()
+    var filteredContacts = [Contact]()
     var resultSearchController = UISearchController(searchResultsController: nil)
     
-    @IBOutlet weak var textStatus: UILabel!
-    @IBOutlet weak var textName: UILabel!
-    @IBOutlet weak var imageProfile: UIImageView!
-    
     var room: String!
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,40 +29,52 @@ class ContactTableViewController: UITableViewController {
         definesPresentationContext = true
         tableView.tableHeaderView = resultSearchController.searchBar
         
-        var data: String
-        var token: String
-        
-        token = Request.token!
-        data = "?token=\(token)"
+        //data that will be pass together with url and path in GET request
+        var getParams: String
+        getParams = "?token=\(Config.token)"
         
         //send REST request for contacts then put results in contactsArray
-        RestApiManager.sharedInstance.httpGetRequest(data, path: "contacts", onCompletion: {(response) in
+        RestApiManager.sharedInstance.httpGetRequest(getParams, path: "contacts", onCompletion: {(response) in
             for (_, value):(String, JSON) in response{
-                
+
                 let contact = value.dictionary
-                self.contactsArray += [ContactItem(name: (contact?["name"]?.stringValue)!,photo: (contact?["imageLarge"]?.stringValue)!,statusMessage: (contact?["status_message"]?.stringValue)!, email: (contact?["email"]?.stringValue)!, employeeId:(contact?["employee_id"]?.stringValue)!, status: (contact?["status"]?.int)!)]
+                self.contactsArray += [Contact(name: (contact?["name"]?.stringValue)!,photo: (contact?["imageLarge"]?.stringValue)!,statusMessage: (contact?["status_message"]?.stringValue)!, email: (contact?["email"]?.stringValue)!, employeeId:(contact?["employee_id"]?.stringValue)!, status: (contact?["status"]?.int)!, id: (contact?["id"]?.int)!)]
                 
-                //self.contactsNameArray.append((test?["name"]?.stringValue)!)
-                print("contact loaded")
             }
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         })
-
-        tableView.reloadData()
         
-//        let socket = SocketIOClient(socketURL: URL(string: "https://apprtc.appspot.com")!, config: [.log(true), .forcePolling(true)])
-//        
-//        socket.on("connect") {data, ack in
-//            print("socket connected")
-//            
-//        }
-//        
-//        
-//        print("socket connecting")
-//        socket.connect()
+        SocketIOManager.sharedInstance.socket.on("contact-online"){ data, ack in
+            
+            //I got the ID of the user who got connected, what I need to do
+            //now is to use that ID to identify the index of contact in contactsArray[ContactItem]
+            let contact: Dictionary<String, Any> = data[0] as! Dictionary<String, Any>
+            let id: Int = contact["contactId"] as! Int
+            
+            let indexInContactsArray = self.contactsArray.index(where:{$0.id == id})
+
+            self.contactsArray[indexInContactsArray!].status = 1
+
+            self.tableView.reloadData()
+            
+        }
+        
+        SocketIOManager.sharedInstance.socket.on("contact-offline"){ data, ack in
+            //I got the ID of the user who got connected, what I need to do
+            //now is to use that ID to identify the contact in contactsArray
+            let contact: Dictionary<String, Any> = data[0] as! Dictionary<String, Any>
+            let id: Int = contact["contactId"] as! Int
+            let indexInContactsArray = self.contactsArray.index(where:{$0.id == id})
+            
+            self.contactsArray[indexInContactsArray!].status = 0
+            self.tableView.reloadData()
+        }
+        
+        //tableView.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,16 +93,15 @@ class ContactTableViewController: UITableViewController {
         if resultSearchController.isActive && resultSearchController.searchBar.text != ""{
             return filteredContacts.count
         }
-        print("test")
+        
         return self.contactsArray.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        print("cell for row is loaded")
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let contact:ContactItem
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ContactTableViewCell
+        let contact: Contact
+        var ledImage: UIImage
         
         if self.resultSearchController.isActive && resultSearchController.searchBar.text != ""{
             //cell?.textLabel?.text = filteredContacts[indexPath.row]
@@ -101,24 +109,26 @@ class ContactTableViewController: UITableViewController {
         }else{
             contact = contactsArray[indexPath.row]
         }
-        cell.textLabel?.text = contact.name
-        cell.imageView?.imageFromUrl(contact.photo)
-        cell.detailTextLabel?.text = contact.employeeId
+    
+        //determine if led to display is on or off
+        ledImage = contact.status == 1 ? #imageLiteral(resourceName: "ledon"): #imageLiteral(resourceName: "ledoff")
+        
+        cell.nameLabel.text = contact.name
+        cell.statusLabel.text = contact.statusMessage
+        cell.profileImage.imageFromUrl(contact.photo)
+        cell.ledImage.image = ledImage
+        
         return cell
 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "showDetail"{
+            
             if let indexPath = tableView.indexPathForSelectedRow{
                 let contact = contactsArray[indexPath.row]
                 let controller = (segue.destination as! UITableViewController) as! ContactDetailViewController
-//                let backButton = UIBarButtonItem()
                 controller.detailContact = contact
-                //controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-                //controller.navigationItem.leftItemsSupplementBackButton = true
-//                backButton.title = "eeee"
-//                controller.navigationItem.backBarButtonItem = backButton
             }
         }
         
@@ -151,10 +161,11 @@ class ContactTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedCell = tableView.cellForRow(at: indexPath)! as UITableViewCell
-        room = selectedCell.detailTextLabel!.text
+        let selectedCell = tableView.cellForRow(at: indexPath)! as! ContactTableViewCell
+        room = selectedCell.nameLabel.text
         print(room)
     }
+
 
 }
 

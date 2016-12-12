@@ -14,20 +14,23 @@ class RestApiManager: NSObject {
     
     static let sharedInstance = RestApiManager()
     
-    let baseURL = "https://be-talk-dev.tmjp.jp/api/"
+    let baseURL = Config.baseURL
+    var route: String = ""
     
     func postRequest(_ path: String, data: [String: AnyObject], onCompletion: @escaping (JSON) -> Void){
-        let route = baseURL
+        
+        //set baseURL
+        route = baseURL
         makeHttpPostRequest(route, body: data, onCompletion: {json, err in
             onCompletion(json as JSON)
         })
     }
     
     func httpGetRequest(_ data: String, path: String, onCompletion: @escaping (JSON) -> Void) {
-        var route: String!
+        var route: String
         
         route = baseURL + path + data
-        
+
         makeHTTPGetRequest(route, onCompletion: { json, err in
             onCompletion(json as JSON)
         })
@@ -63,8 +66,12 @@ class RestApiManager: NSObject {
     }
     
     
-    //simple function for sending POST request
-    func httpPostRequest(_ data: String?, path: String, httpResponse: @escaping (JSON?, String?) -> Void){
+    /* simple function for sending POST request
+     * @params String
+     * @params String
+     * @return closure
+     */
+    func httpPostRequest(data: String?, path: String, httpResponse: @escaping (JSON?, String?) -> Void){
 
         var request = URLRequest(url: URL(string: baseURL + path)!)
         let method: String = "POST"
@@ -75,6 +82,9 @@ class RestApiManager: NSObject {
         
         if let requestData = data{
             request.httpBody = requestData.data(using: String.Encoding.utf8)
+            
+            //this will be checked by JWT middleware
+            request.setValue("Bearer \(Config.token)", forHTTPHeaderField: "Authorization")
         }
         
         //request closure
@@ -92,9 +102,7 @@ class RestApiManager: NSObject {
                 
             }else{
                 let js = JSON(data: data!)
-                
-                print(js)
-                
+
                 return httpResponse(js, nil)
                 
                 //if let token = js["token"].string {
@@ -122,7 +130,7 @@ class RestApiManager: NSObject {
         let session = URLSession.shared
         
         let task = session.dataTask(with: request, completionHandler: {data, response, error -> Void in
-            print(response)
+
             if let jsonData = data {
                 let json:JSON = JSON(data: jsonData)
                 onCompletion(json, error as NSError?)

@@ -14,7 +14,8 @@ target 'be-talk' do
     pod "libjingle_peerconnection"
     pod "SocketRocket"
     pod "Socket.IO-Client-Swift"
-    #pod "AppRTC", "~> 1.0"
+    pod "AppRTC", "~> 1.0"
+    pod "JSQMessagesViewController"
 end
 
 target 'be-talkUITests' do

@@ -16,7 +16,7 @@ class ContactDetailViewController: UITableViewController {
     @IBOutlet weak var textStatusMessage: UILabel!
     @IBOutlet weak var textEmployeeId: UILabel!
     
-    var detailContact: ContactItem?{
+    var detailContact: Contact?{
         didSet{
             configureView()
         }

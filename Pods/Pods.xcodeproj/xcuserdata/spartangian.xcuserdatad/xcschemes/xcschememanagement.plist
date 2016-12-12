@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>JSQMessagesViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JSQSystemSoundPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-be-talk.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +42,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0EAB57D157CED31AB7FF47499942D062</key>
+		<key>1ED4DFAAD25E1999D0244868457A351E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>13353B656A07A8BE63AEA2AF3A3D5F39</key>
+		<key>3E6930CEDCFF39703185187F472E23B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3A14B6FC2376D413952671D2BEAC5068</key>
+		<key>58750E273D7069FC3BC062956B116125</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>59CDDB315DD2B098E0CD9ED56B026F4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FC09DCCA9FDB41C7CE97A3A4F4910F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DFD5BB4E33662ED9926B6DDF72C4F695</key>
+		<key>BE4ED7A6025F4FF37BDE10525E8F80CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
