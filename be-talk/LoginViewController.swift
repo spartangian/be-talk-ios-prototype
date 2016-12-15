@@ -16,9 +16,14 @@ class LoginViewController : UIViewController {
     @IBOutlet weak var textPassword: UITextField!
     @IBOutlet weak var textStatus: UILabel!
     @IBOutlet weak var buttonLogin: UIButton!
+    @IBOutlet weak var formView: UIView!
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        
+        self.formView.layer.cornerRadius = 10
+        self.buttonLogin.layer.cornerRadius = 10
+        
     }
     
     override func didReceiveMemoryWarning(){
@@ -32,9 +37,6 @@ class LoginViewController : UIViewController {
         
         user = textUsername.text!
         pass = textPassword.text!
-        
-        print(user)
-        print(pass)
         
         let postString = "username=\(user)&password=\(pass)&apiToken=\(Config.apiToken)"
         let path = "login"

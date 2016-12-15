@@ -1,5 +1,5 @@
 //
-//  ContactController.swift
+//  ContactViewController.swift
 //  be-talk
 //
 //  Created by Gian Paolo Balaag on 9/23/16.
@@ -9,14 +9,12 @@
 import UIKit
 import SwiftyJSON
 
-class ContactController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchControllerDelegate {
+class ContactViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-
-    let json = JSON("{\"contacts\":\"gian\"}")
     
-    var contactsArray = [ContactItem]()
-    var filteredContacts = [ContactItem]()
+    var contactsArray = [Contact]()
+    var filteredContacts = [Contact]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,16 +25,13 @@ class ContactController: UIViewController, UITableViewDelegate, UITableViewDataS
         var data: String
         var token: String
         
-        token = Request.token!
+        token = Config.token
         
         data = "?token=\(token)"
         
         //send REST request for contacts
         RestApiManager.sharedInstance.httpGetRequest(data, path: "contacts", onCompletion: {(response) in
-            for (_, value):(String, JSON) in response{
-
-                let test = value.dictionary
-                //self.contactsArray += [ContactItem(name: (test?["name"]?.stringValue)!,photo: (test?["image"]?.stringValue)!,status: (test?["status_message"]?.stringValue)!)]
+            for (_, _):(String, JSON) in response{
                 
                 self.tableView.reloadData()
             }
